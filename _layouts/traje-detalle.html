@@ -1,1 +1,24 @@
+---
+layout: default
+---
 
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="{{ page.imagen }}" alt="{{ page.title }}" width="400">
+  </div>
+
+  <table style="width: 100%; border-collapse: collapse;">
+    <tbody>
+      <tr><td><strong>Botones delantero</strong></td><td>{{ page.botones_delantero }}</td></tr>
+      <tr><td><strong>Botones de manga</strong></td><td>{{ page.botones_manga }}</td></tr>
+      <tr><td><strong>Bolsillo</strong></td><td>{{ page.bolsillo }}</td></tr>
+      <tr><td><strong>Solapa</strong></td><td>{{ page.solapa }}</td></tr>
+      <tr><td><strong>Tela en contraste</strong></td><td>{{ page.tela_contraste }}</td></tr>
+      <tr><td><strong>Pespunte</strong></td><td>{{ page.pespunte }}</td></tr>
+      <tr><td><strong>Aberturas traseras saco</strong></td><td>{{ page.aberturas_traseras }}</td></tr>
+      <tr><td><strong>Otro detalle</strong></td><td>{{ page.otro_detalle }}</td></tr>
+    </tbody>
+  </table>
+</article>
