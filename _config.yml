@@ -30,3 +30,8 @@ comments:
 
 plugins:
  - jekyll-feed
+
+ collections:
+  trajes:
+    output: true
+    permalink: /trajes/:path/
