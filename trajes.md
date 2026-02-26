@@ -5,6 +5,9 @@ permalink: /modelos/
 ---
 <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script>
 
 <div class="uk-margin-medium-bottom">
   <ul class="uk-subnav uk-subnav-pill" uk-margin>
@@ -34,7 +37,3 @@ permalink: /modelos/
   {% endfor %}
 
 </div>
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script>
