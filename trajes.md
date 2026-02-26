@@ -4,20 +4,27 @@ title: "Trajes"
 permalink: /modelos/
 ---
 <style>
-  /* Selector ultra-específico para el título del tema Contrast */
-  header.post-header h1.post-title,
-  .post-header h1,
+  /* 1. Oculta el título principal de la página */
+  .post-header, 
+  .post-title, 
+  .page-title,
   h1.post-title {
     display: none !important;
     visibility: hidden !important;
-    height: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+    height: 0 !important;
   }
 
-  /* Ajuste para que el filtro no quede pegado al menú negro */
+  /* 2. Ajusta el espacio superior para que el filtro no quede pegado al menú */
   .uk-container {
     padding-top: 40px !important;
+  }
+
+  /* 3. Opcional: Si queda una línea divisoria huérfana, la quitamos */
+  header.post-header {
+    border: none !important;
+    margin-bottom: 0 !important;
   }
 </style>
 
@@ -25,7 +32,7 @@ permalink: /modelos/
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div class="uk-container uk-margin-medium-top" uk-filter="target: .js-filter">
+<div class="uk-container uk-margin-small-top" uk-filter="target: .js-filter">
 
     <div class="uk-flex uk-flex-center uk-margin-large-bottom">
         <ul class="uk-subnav uk-subnav-pill">
