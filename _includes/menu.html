@@ -1,16 +1,14 @@
 <nav>
-{%- for item in include.menu -%}
-
-
     <a class="uk-logo" href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/logo-smr-blanco.svg' | relative_url }}" 
+        <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
              alt="Logo" 
              style="height: 40px; width: auto;" 
              class="uk-preserve">
     </a>
 
+    
+{%- for item in include.menu -%}
 
- 
   
   {%- assign node = site.pages | where: "name", item.file | first -%}
   {%- assign url = item.url | default: node.url -%}
