@@ -31,7 +31,7 @@ permalink: /modelos/
 
 <div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
 
-    <div class="uk-flex uk-flex-center uk-margin-large-bottom">
+    <div class="uk-flex uk-flex-center uk-margin-small-bottom">
         <ul class="uk-subnav uk-subnav-pill">
             <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
             <li uk-filter-control="filter: [data-categoria='Esencial']"><a href="#">Esenciales</a></li>
