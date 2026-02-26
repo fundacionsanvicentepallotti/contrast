@@ -7,27 +7,38 @@ title: "Nuestra Colección"
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+<style>
+    /* Forzamos el cuadrado perfecto */
+    .cuadrado-perfecto {
+        aspect-ratio: 1 / 1 !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Quitamos el padding lateral del container para que use todo el ancho */
+    .uk-container-expand-custom {
+        max-width: 100% !important;
+        padding: 0 15px;
+    }
+</style>
+
+<div class="uk-container uk-container-expand-custom uk-margin-large-top uk-margin-large-bottom">
     
     <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-line uk-text-bold"><span>Nuestras Líneas</span></h2>
-        <p class="uk-text-meta">Seleccione una categoría para explorar nuestros modelos</p>
     </div>
 
-    <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match" uk-grid 
-         uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 100">
+    <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match" uk-grid 
+         uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 100">
         
         <div>
             <a href="{{ '/modelos/' | relative_url }}" class="uk-link-reset">
-                <div class="uk-inline-hover uk-transition-toggle uk-border-rounded uk-overflow-hidden uk-box-shadow-hover-large" style="height: 250px; background: #000;">
-                    <img src="{{ '/assets/image/categorias/trajes-bg.jpg' | relative_url }}" alt="Trajes" class="uk-transition-scale-up uk-transition-opaque" style="object-fit: cover; height: 100%; width: 100%; opacity: 0.6;">
+                <div class="uk-inline-hover uk-transition-toggle uk-overflow-hidden cuadrado-perfecto" style="background: #000;">
+                    <img src="{{ '/assets/image/categorias/trajes-bg.jpg' | relative_url }}" alt="Trajes" class="uk-transition-scale-up uk-transition-opaque" style="object-fit: cover; height: 100%; width: 100%; opacity: 0.5;">
                     <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
                         <div class="uk-text-center">
-                            <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="letter-spacing: 2px; color: #fff;">Trajes</h3>
-                            <div class="uk-transition-fade">
-                                <hr class="uk-divider-small uk-margin-small-top uk-margin-small-bottom">
-                                <span class="uk-text-small" style="color: #fff;">Ver Catálogo</span>
-                            </div>
+                            <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="letter-spacing: 3px; color: #fff; font-size: 1.8rem;">Trajes</h3>
+                            <span class="uk-text-small uk-visible@m" style="color: #fff; border-top: 1px solid #fff; padding-top: 10px;">EXPLORAR</span>
                         </div>
                     </div>
                 </div>
@@ -35,71 +46,41 @@ title: "Nuestra Colección"
         </div>
 
         <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #1a1a1a;">
+            <div class="uk-inline cuadrado-perfecto" style="background: #1a1a1a; border: 1px solid #222;">
                 <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Sacos</h3>
-                    </div>
+                    <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #444; letter-spacing: 3px; font-size: 1.8rem;">Sacos</h3>
                 </div>
             </div>
         </div>
 
         <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #111;">
+            <div class="uk-inline cuadrado-perfecto" style="background: #111; border: 1px solid #222;">
                 <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Camisas</h3>
-                    </div>
+                    <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #444; letter-spacing: 3px; font-size: 1.8rem;">Camisas</h3>
                 </div>
             </div>
         </div>
 
         <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #1a1a1a;">
+            <div class="uk-inline cuadrado-perfecto" style="background: #111; border: 1px solid #222;">
                 <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Chalecos</h3>
-                    </div>
+                    <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #444; letter-spacing: 3px; font-size: 1.8rem;">Chalecos</h3>
                 </div>
             </div>
         </div>
 
         <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #111;">
+            <div class="uk-inline cuadrado-perfecto" style="background: #1a1a1a; border: 1px solid #222;">
                 <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Pantalón</h3>
-                    </div>
+                    <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #444; letter-spacing: 3px; font-size: 1.8rem;">Pantalón</h3>
                 </div>
             </div>
         </div>
 
         <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #1a1a1a;">
+            <div class="uk-inline cuadrado-perfecto" style="background: #111; border: 1px solid #222;">
                 <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Base Niño</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #111;">
-                <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Estructura</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="uk-inline uk-border-rounded uk-overflow-hidden" style="height: 250px; background: #1a1a1a;">
-                <div class="uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #555;">Otros</h3>
-                    </div>
+                    <h3 class="uk-margin-remove uk-text-uppercase uk-text-bold" style="color: #444; letter-spacing: 3px; font-size: 1.8rem;">Base Niño</h3>
                 </div>
             </div>
         </div>
