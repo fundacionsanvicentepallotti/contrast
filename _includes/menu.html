@@ -1,5 +1,20 @@
-<nav>
+<nav class="uk-navbar-container" uk-navbar>
 {%- for item in include.menu -%}
+
+
+    <div class="uk-navbar-left">
+        
+        <a class="uk-navbar-item uk-logo" href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/image/logo-smr-negro.svg' | relative_url }}" 
+                 alt="Nombre de tu Marca" 
+                 style="height: 80px;" 
+                 class="uk-margin-small-right">
+            
+        </a>
+
+    </div>
+
+  
   {%- assign node = site.pages | where: "name", item.file | first -%}
   {%- assign url = item.url | default: node.url -%}
   {%- assign title = item.title | default: node.title -%}
@@ -7,19 +22,5 @@
     {%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
   </a>
 {%- endfor -%}
-</nav>
 
-<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
-        
-        <a class="uk-navbar-item uk-logo" href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-negro.svg' | relative_url }}" 
-                 alt="Nombre de tu Marca" 
-                 style="height: 40px;" 
-                 class="uk-margin-small-right">
-            
-            <span class="uk-text-bold uk-visible@s">SASTRERÍA</span>
-        </a>
-
-    </div>
     </nav>
