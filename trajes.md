@@ -4,13 +4,20 @@ title: "Trajes"
 permalink: /modelos/
 ---
 <style>
-  /* Oculta el título principal generado por el tema Contrast */
-  .post-title, .page-title, h1.uk-heading-small {
+  /* Selector ultra-específico para el título del tema Contrast */
+  header.post-header h1.post-title,
+  .post-header h1,
+  h1.post-title {
     display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  /* Ajusta el margen superior si queda mucho espacio en blanco */
+
+  /* Ajuste para que el filtro no quede pegado al menú negro */
   .uk-container {
-    margin-top: 20px !important;
+    padding-top: 40px !important;
   }
 </style>
 
