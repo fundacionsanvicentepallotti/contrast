@@ -1,27 +1,79 @@
+HTML
+
 ---
 layout: default
 ---
-<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div class="post">
-  <h1 style="text-align: center;">{{ page.title }}</h1>
-  <div style="text-align: center;">
-    <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" style="max-width: 100%; height: auto;">
-  </div>
+<div class="uk-container uk-container-small uk-margin-large-top uk-margin-large-bottom">
+    
+    <ul class="uk-breadcrumb">
+        <li><a href="{{ '/modelos/' | relative_url }}">Catálogo</a></li>
+        <li><span>{{ page.title }}</span></li>
+    </ul>
 
-  <table style="width: 100%; margin-top: 20px; border-collapse: collapse;">
-    <tr><td><strong>Botones delantero</strong></td><td>{{ page.botones_delantero }}</td></tr>
-    <tr><td><strong>Botones de manga</strong></td><td>{{ page.botones_manga }}</td></tr>
-    <tr><td><strong>Bolsillo</strong></td><td>{{ page.bolsillo }}</td></tr>
-    <tr><td><strong>Solapa</strong></td><td>{{ page.solapa }}</td></tr>
-    <tr><td><strong>Tela en contraste</strong></td><td>{{ page.tela_contrast }}</td></tr>
-    <tr><td><strong>Pespunte</strong></td><td>{{ page.pespunte }}</td></tr>
-    <tr><td><strong>Aberturas traseras</strong></td><td>{{ page.aberturas_traseras }}</td></tr>
-    <tr><td><strong>Otro detalle</strong></td><td>{{ page.otro_detalle }}</td></tr>
-  </table>
+    <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
+        
+        <div>
+            <div class="uk-inline-hover uk-box-shadow-xlarge uk-border-rounded uk-overflow-hidden" uk-lightbox>
+                <a href="{{ page.imagen | relative_url }}" data-caption="{{ page.title }}">
+                    <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" class="uk-transform-origin-center uk-transition-scale-up uk-transition-opaque">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-transition-fade">
+                        <p class="uk-text-center"><span uk-icon="search"></span> Haz clic para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="uk-panel">
+                <span class="uk-label uk-label-warning">{{ page.categoria }}</span>
+                <h1 class="uk-heading-small uk-margin-small-top uk-text-bold">{{ page.title }}</h1>
+                <p class="uk-text-lead uk-text-muted">Ficha técnica de confección artesanal.</p>
+                <hr class="uk-divider-small">
+
+                <table class="uk-table uk-table-divider uk-table-hover uk-table-middle">
+                    <tbody>
+                        <tr>
+                            <td class="uk-width-medium uk-text-bold"><span uk-icon="icon: sign-in; ratio: 0.8" class="uk-margin-small-right"></span>Botones delantero</td>
+                            <td>{{ page.botones_delantero }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><span uk-icon="icon: more; ratio: 0.8" class="uk-margin-small-right"></span>Botones de manga</td>
+                            <td>{{ page.botones_manga }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><span uk-icon="icon: menu; ratio: 0.8" class="uk-margin-small-right"></span>Bolsillo</td>
+                            <td>{{ page.bolsillo }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><span uk-icon="icon: tag; ratio: 0.8" class="uk-margin-small-right"></span>Solapa</td>
+                            <td>{{ page.solapa }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><span uk-icon="icon: paint-bucket; ratio: 0.8" class="uk-margin-small-right"></span>Tela en contraste</td>
+                            <td>{{ page.tela_contrast }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><span uk-icon="icon: pencil; ratio: 0.8" class="uk-margin-small-right"></span>Pespunte</td>
+                            <td>{{ page.pespunte }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><span uk-icon="icon: move; ratio: 0.8" class="uk-margin-small-right"></span>Aberturas traseras</td>
+                            <td>{{ page.aberturas_traseras }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="uk-margin-medium-top">
+                    <a href="https://wa.me/tu-numero-aqui?text=Hola,%20me%20interesa%20el%20{{ page.title }}" 
+                       class="uk-button uk-button-secondary uk-button-large uk-width-1-1 uk-border-rounded">
+                        <span uk-icon="whatsapp" class="uk-margin-small-right"></span> Consultar por este modelo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/js/uikit-icons.min.js"></script>
