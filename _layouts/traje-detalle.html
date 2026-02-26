@@ -7,174 +7,117 @@ layout: default
 
 <div class="uk-container uk-container-small uk-margin-large-top uk-margin-large-bottom">
     
-    <nav aria-label="Breadcrumb" class="uk-margin-medium-bottom">
-        <ul class="uk-breadcrumb">
-            <li><a href="{{ site.baseurl }}/">Inicio</a></li>
-            <li><a href="{{ '/modelos/' | relative_url }}">Catálogo</a></li>
-            <li><span class="uk-text-bold">{{ page.title }}</span></li>
-        </ul>
-    </nav>
-    
+<nav aria-label="Breadcrumb" class="uk-margin-medium-bottom">
+    <ul class="uk-breadcrumb">
+        <li><a href="{{ site.baseurl }}/">Inicio</a></li>
+        <li><a href="{{ '/modelos/' | relative_url }}">Catálogo</a></li>
+        <li><span class="uk-text-bold">{{ page.title }}</span></li>
+    </ul>
+</nav>
 
 <div class="uk-grid-medium" uk-grid>
 
-
-<div class="uk-width-1-1 uk-width-2-3@m" 
-     uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
-    
-    <div class="uk-overflow-hidden">
-        <img src="{{ page.imagen | relative_url }}" 
-             alt="{{ page.title }}" 
-             style="display: block; width: 100%; height: auto;">
-    </div>
-
-</div>
-
-<!--burbujas-->
-<div class="uk-width-1-1 uk-width-1-3@m">
-    <div class="uk-flex uk-flex-column uk-flex-center@s">
-        
-        <div class="uk-margin-medium-bottom uk-text-center uk-text-left@m" 
-             uk-scrollspy="cls: uk-animation-slide-top-small; delay: 200; repeat: false">
-            
-            <span class="uk-label uk-label-warning uk-border-pill uk-margin-small-bottom" 
-                  style="background: #b59410; padding: 2px 15px;">
-                {{ page.categoria }}
-            </span>
-            
-            <h1 class="uk-heading-small uk-text-bold uk-margin-remove" 
-                style="font-size: 2.5rem; color: #111; letter-spacing: -1px;">
-                {{ page.title }}
-            </h1>
-            <hr class="uk-divider-small uk-margin-small-top">
-        </div>
-
-        <div class="uk-flex uk-flex-center uk-flex-around uk-flex-column@m uk-margin-top uk-margin-remove-top@m">
-            
-            <div class="uk-text-center uk-margin-small-bottom" 
-                 uk-scrollspy="cls: uk-animation-scale-up; delay: 900; repeat: false"
-                 style="padding: 10px;">
-                <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" 
-                     style="width: 150px; height: 150px; border: 4px solid #fff; box-sizing: border-box;">
-                    <img src="{{ '/assets/image/cuello.jpg' | relative_url }}" 
-                         style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-                <!--<p class="uk-text-meta uk-text-bold uk-margin-small-top">CUELLO</p>--<
-            </div>
-
-            <div class="uk-text-center uk-margin-small-bottom" 
-                 uk-scrollspy="cls: uk-animation-scale-up; delay: 1100; repeat: false"
-                 style="padding: 10px;">
-                <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" 
-                     style="width: 150px; height: 150px; border: 4px solid #fff; box-sizing: border-box;">
-                    <img src="{{ '/assets/image/botones.jpg' | relative_url }}" 
-                         style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-            </div>
-
-            <div class="uk-text-center" 
-                 uk-scrollspy="cls: uk-animation-scale-up; delay: 1300; repeat: false"
-                 style="padding: 10px;">
-                <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" 
-                     style="width: 150px; height: 150px; border: 4px solid #fff; box-sizing: border-box;">
-                    <img src="{{ '/assets/image/mangas.jpg' | relative_url }}" 
-                         style="object-fit: cover; width: 100%; height: 100%; display: block;">
-                </div>
-            </div>
+    <div class="uk-width-1-1 uk-width-2-3@m" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
+        <div class="uk-overflow-hidden">
+            <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" style="display: block; width: 100%; height: auto;">
         </div>
     </div>
-</div>
-<!--burbujas-->
 
+    <div class="uk-width-1-1 uk-width-1-3@m">
+        <div class="uk-flex uk-flex-column">
+            
+            <div class="uk-margin-medium-bottom uk-text-center uk-text-left@m" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 200; repeat: false">
+                <span class="uk-label uk-border-pill uk-margin-small-bottom" style="background: #b59410; padding: 2px 15px;">
+                    {{ page.categoria }}
+                </span>
+                <h1 class="uk-heading-small uk-text-bold uk-margin-remove" style="font-size: 2.5rem; color: #111; letter-spacing: -1px;">
+                    {{ page.title }}
+                </h1>
+                <hr class="uk-divider-small uk-margin-small-top">
+            </div>
 
-<div class="uk-margin-small-top uk-padding-large uk-border-rounded" style="background-color: #f9fafb; border: 1px solid #eee;">
-    
+            <div class="uk-flex uk-flex-center uk-flex-around uk-flex-column@m uk-margin-top uk-margin-remove-top@m">
+                
+                <div class="uk-text-center uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-scale-up; delay: 900; repeat: false" style="padding: 10px;">
+                    <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" style="width: 150px; height: 150px; border: 4px solid #fff; box-sizing: border-box;">
+                        <img src="{{ '/assets/image/cuello.jpg' | relative_url }}" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                    </div>
+                </div>
+
+                <div class="uk-text-center uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-scale-up; delay: 1100; repeat: false" style="padding: 10px;">
+                    <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" style="width: 150px; height: 150px; border: 4px solid #fff; box-sizing: border-box;">
+                        <img src="{{ '/assets/image/botones.jpg' | relative_url }}" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                    </div>
+                </div>
+
+                <div class="uk-text-center" uk-scrollspy="cls: uk-animation-scale-up; delay: 1300; repeat: false" style="padding: 10px;">
+                    <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" style="width: 150px; height: 150px; border: 4px solid #fff; box-sizing: border-box;">
+                        <img src="{{ '/assets/image/mangas.jpg' | relative_url }}" style="object-fit: cover; width: 100%; height: 100%; display: block;">
+                    </div>
+                </div>
+            </div> </div> </div> </div> <div class="uk-margin-xlarge-top uk-padding-large uk-border-rounded" style="background-color: #f9fafb; border: 1px solid #eee;">
     <h3 class="uk-text-center uk-text-bold uk-margin-large-bottom" style="letter-spacing: 2px; text-transform: uppercase;">
         <span uk-icon="icon: list; ratio: 1.2" class="uk-margin-small-right"></span>
         Especificaciones de Confección
     </h3>
 
     <div class="uk-grid-column-large uk-grid-row-large uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
-        
         <div>
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: sign-in; ratio: 1.1" class="uk-text-primary"></span></div>
+                <div class="uk-margin-right"><span uk-icon="icon: sign-in" class="uk-text-primary"></span></div>
                 <div>
                     <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Botones delantero</dt>
                     <dd class="uk-margin-remove uk-text-emphasis">{{ page.botones_delantero }}</dd>
                 </div>
             </div>
         </div>
-
         <div>
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: more; ratio: 1.1" class="uk-text-primary"></span></div>
+                <div class="uk-margin-right"><span uk-icon="icon: more" class="uk-text-primary"></span></div>
                 <div>
                     <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Botones de manga</dt>
                     <dd class="uk-margin-remove uk-text-emphasis">{{ page.botones_manga }}</dd>
                 </div>
             </div>
         </div>
-
         <div>
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: menu; ratio: 1.1" class="uk-text-primary"></span></div>
+                <div class="uk-margin-right"><span uk-icon="icon: menu" class="uk-text-primary"></span></div>
                 <div>
                     <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Bolsillo</dt>
                     <dd class="uk-margin-remove uk-text-emphasis">{{ page.bolsillo }}</dd>
                 </div>
             </div>
         </div>
-
         <div>
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: tag; ratio: 1.1" class="uk-text-primary"></span></div>
+                <div class="uk-margin-right"><span uk-icon="icon: tag" class="uk-text-primary"></span></div>
                 <div>
                     <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Solapa</dt>
                     <dd class="uk-margin-remove uk-text-emphasis">{{ page.solapa }}</dd>
                 </div>
             </div>
         </div>
-
         <div>
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: paint-bucket; ratio: 1.1" class="uk-text-primary"></span></div>
+                <div class="uk-margin-right"><span uk-icon="icon: paint-bucket" class="uk-text-primary"></span></div>
                 <div>
                     <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Tela en contraste</dt>
                     <dd class="uk-margin-remove uk-text-emphasis">{{ page.tela_contrast }}</dd>
                 </div>
             </div>
         </div>
-
         <div>
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: move; ratio: 1.1" class="uk-text-primary"></span></div>
+                <div class="uk-margin-right"><span uk-icon="icon: move" class="uk-text-primary"></span></div>
                 <div>
                     <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Aberturas traseras</dt>
                     <dd class="uk-margin-remove uk-text-emphasis">{{ page.aberturas_traseras }}</dd>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-
-
-
-
-
-
-<!--Ver Catálogo-->
-<div class="uk-position-fixed uk-position-medium uk-position-bottom-right uk-position-z-index">
-    <a href="{{ '/modelos/' | relative_url }}" 
-       class="uk-button uk-button-secondary uk-border-pill uk-box-shadow-large uk-animation-slide-bottom-small uk-transition-toggle"
-       style="background: #000; color: #fff; padding: 10px 25px; text-transform: none; display: flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.1);">
-        
-        <span uk-icon="icon: grid; ratio: 1" class="uk-transition-rotate"></span>
-        <span class="uk-text-small uk-text-bold uk-visible@s">Explorar Colección</span>
-    </a>
-</div>
-
  
 </div> ```
 
