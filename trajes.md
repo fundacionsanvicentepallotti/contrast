@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Nuestros Modelos"
+<!--title: "Trajes"-->
 permalink: /modelos/
 ---
 
