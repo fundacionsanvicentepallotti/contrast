@@ -1,4 +1,3 @@
-
 ---
 layout: traje-detalle
 title: "Modelo Sting"
