@@ -1,6 +1,6 @@
-title: "60 Aniversario RORI"
+title: "catálogos SMR"
 author: "Vibra"
-description: "Un camino juntos por un futuro brillante"
+description: "Trajes a la medida RORI"
 permalink: /:title/
 lang: "es"
 excerpt_separator: "\n\n\n"
@@ -33,5 +33,5 @@ plugins:
 
 collections:
   trajes:
-    output: true
-    permalink: /trajes/:path/
+  output: true
+  permalink: /trajes/:path/
