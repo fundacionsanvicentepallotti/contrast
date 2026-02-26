@@ -6,7 +6,7 @@ permalink: /modelos/
 <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.13/dist/css/uikit.min.css" />
 
-Aquí puedes ver nuestra colección de trajes. Haz clic en cada uno para ver su ficha técnica detallada.
+Colección de trajes.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
   {% for traje in site.trajes %}
@@ -15,7 +15,7 @@ Aquí puedes ver nuestra colección de trajes. Haz clic en cada uno para ver su 
         <img src="{{ traje.imagen | relative_url }}" alt="{{ traje.title }}" style="width: 100%; border-radius: 4px;">
         <h3 style="margin-top: 10px;">{{ traje.title }}</h3>
       </a>
-      <p>Ficha técnica disponible</p>
+      <!--<p>Ficha técnica disponible</p>-->
     </div>
   {% endfor %}
 </div>
