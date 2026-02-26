@@ -3,6 +3,16 @@ layout: page
 title: "Trajes"
 permalink: /modelos/
 ---
+<style>
+  /* Oculta el título principal generado por el tema Contrast */
+  .post-title, .page-title, h1.uk-heading-small {
+    display: none !important;
+  }
+  /* Ajusta el margen superior si queda mucho espacio en blanco */
+  .uk-container {
+    margin-top: 20px !important;
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
