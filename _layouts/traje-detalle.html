@@ -18,7 +18,7 @@ layout: default
     <div class="uk-grid-large" uk-grid>
         
         <div class="uk-width-2-3@m">
-            <div class="uk-inline uk-box-shadow-xlarge uk-border-rounded uk-overflow-hidden" uk-lightbox>
+            <div class="uk-inline -xlarge uk-border-rounded uk-overflow-hidden" uk-lightbox>
                 <a href="{{ page.imagen | relative_url }}" data-caption="{{ page.title }}">
                     <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" class="uk-transition-scale-up uk-transition-opaque">
                 </a>
@@ -33,19 +33,19 @@ layout: default
             </div>
 
             <div class="uk-flex uk-flex-column uk-flex-around uk-flex-1">
-                <div class="uk-text-center uk-margin-small-bottom">
+                <div class="uk-text-left uk-margin-small-bottom">
                     <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" style="width: 150px; height: 150px; border: 4px solid #fff;">
                         <img src="{{ '/assets/image/detalles/cuello.jpg' | relative_url }}" alt="Cuello" style="object-fit: cover; height: 100%; width: 100%;">
                     </div>
                 </div>
 
-                <div class="uk-text-center uk-margin-small-bottom">
+                <div class="uk-text-left uk-margin-small-bottom">
                     <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" style="width: 150px; height: 150px; border: 4px solid #fff;">
                         <img src="{{ '/assets/image/detalles/botones.jpg' | relative_url }}" alt="Botones" style="object-fit: cover; height: 100%; width: 100%;">
                     </div>
                 </div>
 
-                <div class="uk-text-center">
+                <div class="uk-text-left">
                     <div class="uk-inline uk-border-circle uk-box-shadow-large uk-overflow-hidden" style="width: 150px; height: 150px; border: 4px solid #fff;">
                         <img src="{{ '/assets/image/detalles/mangas.jpg' | relative_url }}" alt="Mangas" style="object-fit: cover; height: 100%; width: 100%;">
                     </div>
@@ -54,7 +54,7 @@ layout: default
         </div>
     </div>
 
-    <div class="uk-margin-xlarge-top">
+    <div class="uk-margin-small-top">
         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded">
             <h3 class="uk-card-title uk-text-center uk-text-bold uk-margin-medium-bottom">
                 <span uk-icon="icon: list; ratio: 1.2" class="uk-margin-small-right"></span>Ficha Técnica de Confección
