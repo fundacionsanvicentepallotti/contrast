@@ -1,7 +1,7 @@
 ---
 layout: traje-detalle
 title: "Modelo Sting"
-categoria: "Especial"  <-- Agrega esto (usa "Esencial" o "Especial")
+categoria: "Especial"
 imagen: "/assets/image/sting.jpg"
 botones_delantero: "1 Botones"
 botones_manga: "4 Botones"
