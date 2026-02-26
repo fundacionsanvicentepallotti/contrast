@@ -33,9 +33,6 @@ permalink: /modelos/
                 <div class="uk-card-body uk-padding-small uk-text-center">
                     <span class="uk-label uk-margin-small-bottom">{{ traje.categoria }}</span>
                     <h3 class="uk-card-title uk-text-bold uk-margin-remove">{{ traje.title }}</h3>
-                    <p class="uk-text-meta uk-margin-small-top">{{ traje.botones_delantero }} • {{ traje.solapa }}</p>
-                    <hr class="uk-divider-small">
-                    <a href="{{ traje.url | relative_url }}" class="uk-button uk-button-text uk-text-primary">Ver Detalles</a>
                 </div>
 
             </div>
@@ -43,5 +40,4 @@ permalink: /modelos/
         {% endfor %}
 
     </div>
-</div>
 </div>
