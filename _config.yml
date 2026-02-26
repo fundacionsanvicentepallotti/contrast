@@ -33,5 +33,5 @@ plugins:
 
 collections:
   trajes:
-  output: true
-  permalink: /trajes/:path/
+    output: true
+    permalink: /trajes/:path/
