@@ -1,13 +1,20 @@
-<nav class="uk-navbar-container" uk-navbar>
+<nav>
 {%- for item in include.menu -%}
 
-
+<div class="uk-navbar-left">
+    <a class="uk-logo" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/logo-smr-blanco.svg' | relative_url }}" 
+             alt="Logo" 
+             style="height: 35px; width: auto;" 
+             class="uk-preserve">
+    </a>
+</div>
 
         
         <a class="uk-navbar-item uk-logo" href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-negro.svg' | relative_url }}" 
                  alt="SMR" 
-                 style="height: 80px;" 
+                 style="height: 40px;" 
                  class="uk-margin-small-right">
             
         </a>
