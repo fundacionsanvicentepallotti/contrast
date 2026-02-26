@@ -4,27 +4,24 @@ title: "Trajes"
 permalink: /modelos/
 ---
 <style>
-  /* 1. Oculta el título principal de la página */
+  /* 1. Ocultamos el header completo del post/página */
   .post-header, 
-  .post-title, 
-  .page-title,
-  h1.post-title {
+  header.post-header,
+  .page-header {
     display: none !important;
-    visibility: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 0 !important;
   }
 
-  /* 2. Ajusta el espacio superior para que el filtro no quede pegado al menú */
-  .uk-container {
-    padding-top: 40px !important;
+  /* 2. Por si acaso el tema usa h1 directamente */
+  main h1:first-of-type,
+  article h1:first-of-type,
+  .uk-container h1:first-child {
+    display: none !important;
   }
 
-  /* 3. Opcional: Si queda una línea divisoria huérfana, la quitamos */
-  header.post-header {
-    border: none !important;
-    margin-bottom: 0 !important;
+  /* 3. Quitamos márgenes residuales */
+  .post-content {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
   }
 </style>
 
@@ -32,7 +29,7 @@ permalink: /modelos/
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div class="uk-container uk-margin-small-top" uk-filter="target: .js-filter">
+<div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
 
     <div class="uk-flex uk-flex-center uk-margin-large-bottom">
         <ul class="uk-subnav uk-subnav-pill">
