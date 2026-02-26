@@ -2,17 +2,16 @@
 {%- for item in include.menu -%}
 
 
-    <div class="uk-navbar-left">
+
         
         <a class="uk-navbar-item uk-logo" href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-negro.svg' | relative_url }}" 
-                 alt="Nombre de tu Marca" 
+                 alt="SMR" 
                  style="height: 80px;" 
                  class="uk-margin-small-right">
             
         </a>
 
-    </div>
 
   
   {%- assign node = site.pages | where: "name", item.file | first -%}
