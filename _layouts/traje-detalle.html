@@ -1,6 +1,30 @@
 ---
 layout: default
 ---
+<style>
+/* Sombras ultra suaves para las burbujas */
+.burbuja-lujo {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important; /* Sombras muy sutiles */
+    transition: all 0.5s ease-in-out;
+}
+
+.burbuja-lujo:hover {
+    transform: translateY(-10px); /* Flota al pasar el mouse */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+/* Efecto de flotación infinita para que parezcan burbujas reales */
+.float-anim {
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+    
+</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
