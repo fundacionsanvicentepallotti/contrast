@@ -106,3 +106,53 @@ title: "Nuestra Colección"
     </div> </div>
 
 
+
+<a href="https://wa.me/TUNUMERO" class="btn-whatsapp" target="_blank">
+    <span uk-icon="icon: whatsapp; ratio: 1.5"></span>
+    <span class="texto-whatsapp">¿Necesitas una cita?</span>
+</a>
+
+<style>
+    .btn-whatsapp {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #000; /* Negro para tema Contrast */
+        color: #fff !important;
+        padding: 12px 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        text-decoration: none !important;
+        z-index: 1000;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        border: 1px solid #333;
+    }
+
+    .btn-whatsapp:hover {
+        background-color: #25d366; /* Color verde WhatsApp al pasar el mouse */
+        transform: translateY(-5px);
+        color: #fff !important;
+    }
+
+    .texto-whatsapp {
+        margin-left: 10px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    /* En móviles pequeños solo mostramos el icono */
+    @media (max-width: 640px) {
+        .texto-whatsapp {
+            display: none;
+        }
+        .btn-whatsapp {
+            padding: 15px;
+            border-radius: 50%;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+</style>
+
