@@ -29,6 +29,15 @@ permalink: /modelos/
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
+<nav aria-label="Breadcrumb" class="uk-margin-medium-bottom">
+    <ul class="uk-breadcrumb">
+        <li><a href="{{ site.baseurl }}/">Inicio</a></li>
+        <li><a href="{{ '/modelos/' | relative_url }}">Catálogo</a></li>
+        <li><span class="uk-text-bold">{{ page.title }}</span></li>
+    </ul>
+</nav>
+
+
 <div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
 
     <div class="uk-flex uk-flex-center uk-margin-small-bottom">
