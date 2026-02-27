@@ -32,7 +32,7 @@ permalink: /modelos/
 
 <div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
 
-<nav aria-label="Breadcrumb" class="uk-margin-medium-bottom">
+<nav aria-label="Breadcrumb" class="uk-margin-xsmall-bottom">
     <ul class="uk-breadcrumb">
         <li><a href="{{ site.baseurl }}/">Inicio</a></li>
         <li><a href="{{ '/modelos/' | relative_url }}">Catálogo</a></li>
@@ -40,7 +40,7 @@ permalink: /modelos/
     </ul>
 </nav>
 
-    <div class="uk-flex uk-flex-center uk-margin-small-bottom">
+    <div class="uk-flex uk-flex-center uk-margin-xsmall-bottom">
         <ul class="uk-subnav uk-subnav-pill">
             <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
             <li uk-filter-control="filter: [data-categoria='Esencial']"><a href="#">Esenciales</a></li>
