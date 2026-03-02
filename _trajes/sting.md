@@ -2,7 +2,7 @@
 layout: traje-detalle
 title: "Modelo Sting"
 categoria: "Especial"
-imagen: "/assets/image/sting.jpg"
+imagen: "/assets/image/trajes/tesp-sting.webp"
 botones_delantero: "1 Botones"
 botones_manga: "4 Botones"
 bolsillo: "Inclinados, de tapas"
