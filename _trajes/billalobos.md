@@ -1,6 +1,6 @@
 ---
 layout: traje-detalle
-title: "Modelo Sting"
+title: "Modelo Billalobos"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-billalobos.webp"
 botones_delantero: "2 Botones"
