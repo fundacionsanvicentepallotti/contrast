@@ -61,7 +61,7 @@ permalink: /modelos/
                 </div>
 
                 <div class="uk-card-body uk-padding-small uk-text-center">
-                    <span class="uk-label uk-margin-small-bottom">{{ traje.categoria }}</span>
+                    <span class="uk-label uk-margin-small-bottom uk-text-small">{{ traje.categoria }}</span>
                     <h4 class="uk-card-title uk-text-bold uk-margin-remove">{{ traje.title }}</h4>
                 </div>
 
