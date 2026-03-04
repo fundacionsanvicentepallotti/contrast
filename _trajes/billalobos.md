@@ -1,6 +1,6 @@
 ---
 layout: traje-detalle
-title: "Modelo Billalobos"
+title: "Billalobos"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-billalobos.webp"
 botones_delantero: "2 Botones"
@@ -11,4 +11,7 @@ tela_contrast: "En vivos de bolsillos, carterita y ticket pocket"
 pespunte: "No aplica"
 aberturas_traseras: "2 laterales"
 otro_detalle: "Ticket pocket"
+bases_disponibles: "Mon"
+silueta : "Sli"
+tomar_medidas_con: "Cual"
 ---
