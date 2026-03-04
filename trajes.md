@@ -32,13 +32,13 @@ permalink: /modelos/
 
 <div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
 
-<nav aria-label="Breadcrumb" class="uk-margin-bottom">
+<!--<nav aria-label="Breadcrumb" class="uk-margin-bottom">
     <ul class="uk-breadcrumb">
         <li><a href="{{ site.baseurl }}/">Inicio</a></li>
         <li><a href="{{ '/modelos/' | relative_url }}">Catálogo</a></li>
         <li><span class="uk-text-bold">{{ page.title }}</span></li>
     </ul>
-</nav>
+</nav>-->
 
     <div class="uk-flex uk-flex-center uk-margin-bottom">
         <ul class="uk-subnav uk-subnav-pill">
