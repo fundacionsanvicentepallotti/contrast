@@ -3,7 +3,7 @@ layout: traje-detalle
 ide: "6"
 title: "Villa"
 categoria: "Especial"
-imagen: "/assets/image/trajes/tesp-billalobos.webp"
+imagen: "/assets/image/trajes/tesp-villa.webp"
 botones_delantero: "2 Botones"
 botones_manga: "3 Botones"
 bolsillo: "Rectos, doble vivos"
