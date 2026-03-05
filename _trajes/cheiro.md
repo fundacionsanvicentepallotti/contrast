@@ -1,9 +1,11 @@
 ---
 layout: traje-detalle
-ide: "2"
+ide: "6"
 title: "Cheiro"
 categoria: "Especial"
-imagen: "/assets/image/trajes/tesp-johan.webp"
+imagen: "/assets/image/trajes/tesp-cheiro.webp"
+
+# --- DETALLES DE CONFECCIÓN ---
 botones_delantero: "1 Boton"
 botones_manga: "3 Botones"
 bolsillo: "Rectos, de vivos"
@@ -12,7 +14,17 @@ tela_contrast: "Borde solapa, cuellos y vivos"
 pespunte: "No aplica"
 aberturas_traseras: "2 laterales"
 otro_detalle: "No aplica"
-bases_disponibles: "BNS"
-silueta : "X"
-tomar_medidas_con: "X"
+
+# --- OPCIONES DE BASE (CORTES) ---
+# Configuración para la Base 1 (Estilo más ajustado)
+bases_disponible1: "MONACO"
+silueta1: "SLIM"
+Nombre_del_modelo1: "CHEIRO"
+tomar_medidas_con1: "TRAJE DE TIENDA"
+
+# Configuración para la Base 2 (Estilo tradicional)
+bases_disponible2: "2010"
+silueta2: "CONFORT"
+Nombre_del_modelo2: "BNS"
+tomar_medidas_con2: "PRENDA TESTIGO T1022"
 ---
