@@ -44,7 +44,7 @@ permalink: /modelos/
         <ul class="uk-subnav uk-subnav-pill">
             <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
             <li uk-filter-control="filter: [data-categoria='Esencial']"><a href="#">Esenciales</a></li>
-            <li uk-filter-control="filter: [data-categoria='Especial']"><a href="#">Especiales</a></li>
+            <li uk-filter-control="filter: [data-categoria='Especial']"><a href="#"><span uk-icon="star"></span>Especiales</a></li>
         </ul>
     </div>
 
