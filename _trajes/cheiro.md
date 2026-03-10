@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "6"
 title: "Cheiro"
-categoria: "Especial"
+categoria: "<span uk-icon="star"></span>Especial"
 imagen: "/assets/image/trajes/tesp-cheiro.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
