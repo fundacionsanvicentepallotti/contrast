@@ -4,6 +4,8 @@ ide: "7"
 title: "Vairon"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-vairon.webp"
+
+# --- DETALLES DE CONFECCIÓN ---
 botones_delantero: "1 Boton"
 botones_manga: "3 Botones"
 bolsillo: "Rectos, de tapas"
