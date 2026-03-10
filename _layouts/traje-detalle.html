@@ -106,7 +106,7 @@ layout: default
 
 <div class="uk-flex uk-flex-center">
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-            <h3 class="uk-card-title">BASES DISPONIBLES</h3>
+
 
             <div class="uk-margin-medium-bottom uk-text-center uk-text-left@m" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 200; repeat: false">
                 <span class="uk-label uk-border-pill uk-margin-small-bottom" style="background: #b59410; padding: 2px 15px;">
@@ -116,17 +116,13 @@ layout: default
                     {{ page.title }}
                 </h1>
             </div>
-
+            <h3 class="uk-card-title">BASES DISPONIBLES</h3>
 
         </div>
 
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-            <!--<h3 class="uk-card-title">BASES DISPONIBLES</h3>-->
-            <div>
-                <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Base</dt>
-                <dd class="uk-margin-remove uk-text-emphasis">{{ page.bases_disponible1 }}</dd>
-            </div>
-
+            <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Base</dt>
+            <dd class="uk-margin-remove uk-text-emphasis">{{ page.bases_disponible1 }}</dd>
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Silueta</dt>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.silueta1 }}</dd>
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Tomar medidas</dt>
@@ -135,11 +131,10 @@ layout: default
 
 
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-            <!--<h3 class="uk-card-title">BASES DISPONIBLES</h3>-->
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Base</dt>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.bases_disponible2 }}</dd>
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Silueta</dt>
-            <dd class="uk-margin-remove uk-text-emphasis">{{ silueta2 }}</dd>
+            <dd class="uk-margin-remove uk-text-emphasis">{{ page.silueta2 }}</dd>
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Tomar medidas</dt>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.tomar_medidas_con2 }}</dd>
         </div>
@@ -163,16 +158,6 @@ layout: default
         <span uk-icon="icon: list; ratio: 1.2" class="uk-margin-small-right"></span>
         DETALLES
     </h3>
-
-
-            <div class="uk-margin-medium-bottom uk-text-center uk-text-left@m" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 200; repeat: false">
-                <span class="uk-label uk-border-pill uk-margin-small-bottom" style="background: #b59410; padding: 2px 15px;">
-                    {{ page.categoria }}
-                </span>
-                <h1 class="uk-heading-small uk-text-bold uk-margin-remove" style="font-size: 2.5rem; color: #111; letter-spacing: -1px;">
-                    {{ page.title }}
-                </h1>
-            </div>
 
 
         
@@ -249,24 +234,7 @@ layout: default
                 </div>
             </div>
         </div>
-        <div>
-            <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: move" class="uk-text-primary"></span></div>
-                <div>
-                    <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Bases_Disponibles</dt>
-                    <dd class="uk-margin-remove uk-text-emphasis">{{ page.bases_disponibles }}</dd>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-flex uk-flex-middle">
-                <div class="uk-margin-right"><span uk-icon="icon: move" class="uk-text-primary"></span></div>
-                <div>
-                    <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Ide</dt>
-                    <dd class="uk-margin-remove uk-text-emphasis">{{ page.ide }}</dd>
-                </div>
-            </div>
-        </div>
+
         
     </div>
 </div>
