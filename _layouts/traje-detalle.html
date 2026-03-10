@@ -105,7 +105,7 @@ layout: default
 
 
 <div class="uk-flex uk-flex-center">
-        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <!--<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
 
 
             <div class="uk-margin-medium-bottom uk-text-center uk-text-left@m" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 200; repeat: false">
@@ -117,10 +117,13 @@ layout: default
                 </h1>
             </div>
 
-        </div>
+        </div>-->
 
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-            <dd class="uk-margin-remove uk-text-emphasis uk-text-large">{{ page.Nombre_del_modelo1 }}</dd>
+            <span class="uk-label uk-border-pill uk-margin-small-bottom" style="background: #b59410; padding: 2px 15px;">
+                    {{ page.categoria }}
+            </span>
+            <h1 class="uk-heading-small uk-text-bold uk-margin-remove" style="font-size: 2.5rem; color: #111; letter-spacing: -1px;">{{ page.Nombre_del_modelo1 }}</h1>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.bases_disponible1 }}</dd>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.silueta1 }}</dd>
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Tomar medidas</dt>
@@ -129,7 +132,10 @@ layout: default
 
 
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-            <dd class="uk-margin-remove uk-text-emphasis uk-text-large">{{ page.Nombre_del_modelo2 }}</dd>
+            <span class="uk-label uk-border-pill uk-margin-small-bottom" style="background: #b59410; padding: 2px 15px;">
+                    {{ page.categoria }}
+            </span>
+            <h1 class="uk-heading-small uk-text-bold uk-margin-remove" style="font-size: 2.5rem; color: #111; letter-spacing: -1px;">{{ page.Nombre_del_modelo2 }}</h1>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.bases_disponible2 }}</dd>
             <dd class="uk-margin-remove uk-text-emphasis">{{ page.silueta2 }}</dd>
             <dt class="uk-text-meta uk-text-bold uk-text-uppercase" style="color: #888;">Tomar medidas</dt>
