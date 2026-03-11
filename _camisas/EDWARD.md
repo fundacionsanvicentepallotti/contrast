@@ -8,7 +8,7 @@ imagen: "/assets/image/trajes/tesp-cheiro.webp"
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
 cuello: "Ingles (Many)"
-puno: "Sencillo, Hexagonal"
+puno: "Sencillo Hexagonal"
 bolsillo:"No Aplica"
 contraste: "No Aplica"
 otros_detalle: "Pespunte"
