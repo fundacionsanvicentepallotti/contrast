@@ -35,3 +35,6 @@ collections:
   trajes:
     output: true
     permalink: /trajes/:path/
+  camisas:
+    output: true
+    permalink: /camisas/:path/
