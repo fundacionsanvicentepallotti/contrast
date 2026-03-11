@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Blanca Oxford"
+title: "Ygal"
 clase: esencial
 imagen: "/assets/image/ygal.webp"
 ---
