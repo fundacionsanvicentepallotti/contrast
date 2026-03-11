@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Camisería"
+permalink: /camisas/
 ---
 
 <div class="uk-container uk-margin-large-top">
