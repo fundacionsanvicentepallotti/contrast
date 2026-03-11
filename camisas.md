@@ -44,7 +44,7 @@ permalink: /camisas/
 
         <ul class="js-filter uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
             {% for camisa in site.camisas %}
-            <li class="{{ camisa.clase }}">
+            <li class="{{ camisa.categoria }}">
                 <a href="{{ camisa.url | relative_url }}" class="uk-link-reset">
                     <div class="uk-card uk-card-default uk-border-rounded uk-overflow-hidden">
                         <div class="uk-card-media-top">
