@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Trajes"
-permalink: /Trajes/
+title: "trajes"
+permalink: /trajes/
 ---
 <style>
   /* 1. Ocultamos el header completo del post/página */
