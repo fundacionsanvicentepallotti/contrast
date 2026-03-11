@@ -3,7 +3,7 @@ layout: camisa-detalle
 ide: "1"
 title: "Edward"
 categoria: "esencial"
-imagen: "/assets/image/camisa/edward.webp"
+imagen: "/assets/image/trajes/tesp-galio.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
