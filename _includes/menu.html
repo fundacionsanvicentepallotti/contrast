@@ -2,20 +2,29 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <a class="uk-logo" href="{{ '/' | relative_url }}">
         <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
              alt="SMR" 
              style="height: 80px; width: auto;" 
              class="uk-preserve">
     </a>
-<nav> 
-  {%- for item in include.menu -%}
-  {%- assign node = site.pages | where: "name", item.file | first -%}
-  {%- assign url = item.url | default: node.url -%}
-  {%- assign title = item.title | default: node.title -%}
-  <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
-    {%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
-  </a>
-{%- endfor -%}
-
-    </nav>
+    
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            {%- for item in include.menu -%}
+                {%- assign node = site.pages | where: "name", item.file | first -%}
+                {%- assign url = item.url | default: node.url -%}
+                {%- assign title = item.title | default: node.title -%}
+                <li>
+                    <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+                        {%- if item.icon -%}
+                            <span uk-icon="icon: {{ item.icon }}" class="uk-margin-small-right"></span>
+                        {%- endif -%}
+                        {{ title }}
+                    </a>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</nav>
