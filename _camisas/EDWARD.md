@@ -1,8 +1,7 @@
-
 ---
 layout: camisa-detalle
 ide: "1"
-title: "bolivar"
+title: "Eduardo"
 clase: "esencial"
 imagen: "/assets/image/trajes/tesp-galio.webp"
 
