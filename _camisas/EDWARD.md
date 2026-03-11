@@ -1,3 +1,4 @@
+
 ---
 layout: camisa-detalle
 ide: "1"
