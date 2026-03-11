@@ -2,6 +2,14 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
+    <div style="display: flex; align-items: center;">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
+                 alt="SMR" 
+                 style="height: 50px; width: auto; display: block;">
+        </a>
+    </div>
+
 <nav style="
     display: flex; 
     align-items: center; 
@@ -11,13 +19,6 @@
     min-height: 60px; /* Aquí controlas el grosor total del menú */
 ">
     
-    <div style="display: flex; align-items: center;">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
-                 alt="SMR" 
-                 style="height: 50px; width: auto; display: block;">
-        </a>
-    </div>
 
     <div style="display: flex; align-items: center;">
         {%- for item in include.menu -%}
