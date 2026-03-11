@@ -21,9 +21,9 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   # - {title: "Camisería", url: "/camisas/"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  # - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: WhatsApp, icon: whatsapp, url: "https://wa.me/584123133803"}
+  - {title: Instagram, icon: instagram, url: "https://instagram.com/TU_USUARIO_RORI"}
+  - {title: Mail, icon: envelope, url: "mailto:tu_correo@ejemplo.com"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
