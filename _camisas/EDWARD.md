@@ -2,7 +2,7 @@
 layout: camisa-detalle
 ide: "1"
 title: "EDUARD"
-clase: "esencial"
+categoria: "esencial"
 imagen: "/assets/image/trajes/tesp-galio.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
