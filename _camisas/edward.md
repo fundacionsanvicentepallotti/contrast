@@ -1,7 +1,7 @@
 ---
 layout: camisa-detalle
 ide: "1"
-title: "edward"
+title: "Edward"
 categoria: "esencial"
 imagen: "/assets/image/trajes/tesp-galio.webp"
 
