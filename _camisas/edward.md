@@ -1,7 +1,7 @@
 ---
 layout: camisa-detalle
 ide: "1"
-title: "EDUARD"
+title: "edward"
 categoria: "esencial"
 imagen: "/assets/image/trajes/tesp-galio.webp"
 
@@ -11,7 +11,7 @@ cuello: "Ingles (Many)"
 puno: "Sencillo, Hexagonal"
 bolsillo: "No aplica"
 tela_contrast: "No aplica"
-otro_detalle: "pespunte"
+otro_detalle: "Pespunte"
 
 # --- OPCIONES DE BASE (CORTES) ---
 # Base 1 (Estilo más ajustado)
