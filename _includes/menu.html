@@ -2,36 +2,45 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px;">
+<nav style="
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 5px 20px; 
+    background: #222; /* El fondo oscuro de tu tema */
+    min-height: 60px; /* Aquí controlas el grosor total del menú */
+">
     
-    <div class="uk-navbar-left">
-        <a class="uk-logo" href="{{ '/' | relative_url }}">
+    <div style="display: flex; align-items: center;">
+        <a href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
                  alt="SMR" 
-                 style="height: 70px; width: auto;" 
-                 class="uk-preserve">
+                 style="height: 50px; width: auto; display: block;">
         </a>
     </div>
 
-    <div class="uk-navbar-right">
-        <ul class="uk-nav uk-nav-default uk-flex uk-flex-middle">
-            {%- for item in include.menu -%}
-                {%- assign node = site.pages | where: "name", item.file | first -%}
-                {%- assign url = item.url | default: node.url -%}
-                {%- assign title = item.title | default: node.title -%}
-                
-                <li style="list-style: none; margin-left: 25px;">
-                    <a href="{{ url | relative_url }}" 
-                       style="color: white; text-decoration: none; font-weight: 500; letter-spacing: 1px;"
-                       {% if url == page.url %}class="selected"{% endif %}>
-                        {%- if item.icon -%}
-                            <span uk-icon="icon: {{ item.icon }}" class="uk-margin-small-right"></span>
-                        {%- endif -%}
-                        {{ title | uppercase }}
-                    </a>
-                </li>
-            {%- endfor -%}
-        </ul>
+    <div style="display: flex; align-items: center;">
+        {%- for item in include.menu -%}
+            {%- assign node = site.pages | where: "name", item.file | first -%}
+            {%- assign url = item.url | default: node.url -%}
+            {%- assign title = item.title | default: node.title -%}
+            
+            <a href="{{ url | relative_url }}" 
+               style="
+                color: white; 
+                margin-left: 20px; 
+                text-decoration: none; 
+                text-transform: uppercase; 
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+               ">
+                {%- if item.icon -%}
+                    <span uk-icon="icon: {{ item.icon }}" style="margin-right: 8px;"></span>
+                {%- endif -%}
+                {{ title }}
+            </a>
+        {%- endfor -%}
     </div>
 
 </nav>
