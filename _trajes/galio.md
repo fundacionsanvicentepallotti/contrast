@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: camisa-detalle
 ide: "11"
 title: "Galio"
 categoria: "Especial"
