@@ -3,7 +3,7 @@ layout: camisa-detalle
 ide: "100"
 title: "Event"
 categoria: "especial"
-imagen: "/assets/image/trajes/event.webp"
+imagen: "/assets/image/camisa/event.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
