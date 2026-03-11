@@ -1,7 +1,7 @@
 
 ---
 layout: camisa-detalle
-ide: "1"
+ide: "100"
 title: "Blanca Oxford"
 clase: "esencial"
 imagen: "/assets/image/trajes/tesp-cheiro.webp"
