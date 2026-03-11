@@ -1,18 +1,18 @@
 
 ---
 layout: camisa-detalle
-ide: "100"
-title: "Blanca Oxford"
+ide: "1"
+title: "bolivar"
 clase: "esencial"
-imagen: "/assets/image/trajes/tesp-cheiro.webp"
+imagen: "/assets/image/trajes/tesp-galio.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
 cuello: "Ingles (Many)"
-puno: "Sencillo Hexagonal"
-bolsillo:"No Aplica"
-contraste: "No Aplica"
-otros_detalle: "Pespunte"
+puno: "Sencillo, Hexagonal"
+bolsillo: "No aplica"
+tela_contrast: "No aplica"
+otro_detalle: "pespunte"
 
 # --- OPCIONES DE BASE (CORTES) ---
 # Configuración para la Base 1 (Estilo más ajustado)
