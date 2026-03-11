@@ -2,5 +2,5 @@
 layout: default
 title: "Ygal"
 clase: esencial
-imagen: "/assets/image/ygal.webp"
+imagen: "/assets/image/trajes/tesp-galio.webp"
 ---
