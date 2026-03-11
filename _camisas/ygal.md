@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: camisa-detalle
+ide: "2"
 title: "Ygal"
 clase: esencial
 imagen: "/assets/image/trajes/tesp-galio.webp"
