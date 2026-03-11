@@ -1,5 +1,5 @@
 ---
-layout: camisa-detall
+layout: camisa-detalle
 ide: "1"
 title: "Blanca Oxford"
 clase: esencial
