@@ -3,7 +3,7 @@ layout: camisa-detalle
 ide: "100"
 title: "Event"
 categoria: "especial"
-imagen: "/assets/image/trajes/tesp-galio.webp"
+imagen: "/assets/image/trajes/event.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
