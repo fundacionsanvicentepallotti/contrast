@@ -23,7 +23,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: WhatsApp, icon: whatsapp, url: "https://wa.me/58412-3133803"}
   - {title: Instagram, icon: instagram, url: "https://instagram.com/tiendasrori"}
-  - {title: Mail, icon: envelope, url: "mailto:tu_correo@ejemplo.com"}
+  #  - {title: Mail, icon: envelope, url: "mailto:tu_correo@ejemplo.com"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
