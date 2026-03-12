@@ -33,7 +33,7 @@ permalink: /camisas/
 
 
 
-<div class="uk-container uk-margin-large-top">
+<div class="uk-container uk-margin-small-top">
     
     <div uk-filter="target: .js-filter">
         <ul class="uk-subnav uk-subnav-pill uk-flex-center">
