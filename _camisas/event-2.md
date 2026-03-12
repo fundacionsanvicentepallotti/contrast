@@ -2,7 +2,7 @@
 layout: camisa-detalle
 ide_camisa: 25
 modelo: Event-2
-categoria:: especial
+categoria: "especial"
 imagen: "/assets/image/camisa/event-2.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
@@ -25,3 +25,4 @@ tomar_medidas_con_2: camisa confort
 
 
 ---
+
