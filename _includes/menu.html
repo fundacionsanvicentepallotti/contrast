@@ -2,13 +2,7 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-    <div style="display: flex; align-items: center;">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
-                 alt="SMR" 
-                 style="height: 80px; width: auto; display: block;">
-        </a>
-    </div>
+
 
 
 <nav style="
@@ -16,14 +10,20 @@
     align-items: center; 
     justify-content: space-between; 
     padding: 0px 40px; 
-    min-height: 70px;
+    min-height: 75px;
     position: sticky; /* Se queda pegado arriba al bajar */
     top: 0;
     z-index: 1000;
 
 ">
     
-
+    <div style="display: flex; align-items: center;">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
+                 alt="SMR" 
+                 style="height: 75px; width: auto; display: block;">
+        </a>
+    </div>
 
     <div style="display: flex; align-items: center;">
         {%- for item in include.menu -%}
