@@ -2,6 +2,23 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
+/* Evita que el icono se encoja en pantallas pequeñas */
+[uk-icon] svg {
+    width: 20px !important; /* Ajusta al tamaño que desees */
+    height: 20px !important;
+    flex-shrink: 0; /* Prohibe que el flexbox lo comprima */
+}
+
+/* Evita que el texto del menú se amontone en móvil */
+@media (max-width: 640px) {
+    nav {
+        padding: 0 10px !important; /* Menos espacio a los lados para ganar ancho */
+    }
+    nav a {
+        margin-left: 10px !important; /* Pegamos más los botones entre sí */
+        font-size: 10px !important; /* Bajamos un poco la letra para que quepa el icono */
+    }
+}
 
 <div class="uk-container">
 
