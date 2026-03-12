@@ -20,11 +20,7 @@
     position: sticky; /* Se queda pegado arriba al bajar */
     top: 0;
     z-index: 1000;
-    /* --- EFECTO VIDRIO --- */
 
-    backdrop-filter: blur(10px); /* Desenfoque del fondo */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria casi invisible */
 ">
     
 
@@ -49,7 +45,7 @@
                 letter-spacing: 1.5px;
                ">
                 {%- if item.icon -%}
-                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>
+                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.9" style="margin-right: 8px;"></span>
                 {%- endif -%}
                 {{ title }}
             </a>
