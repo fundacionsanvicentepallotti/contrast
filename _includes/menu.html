@@ -17,7 +17,7 @@
 
 ">
     
-    <div style="display: flex; align-items: center;">
+    <div style="display: flex; align-items: right;">
         <a href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
                  alt="SMR" 
@@ -45,7 +45,7 @@
                 letter-spacing: 1.5px;
                ">
                 {%- if item.icon -%}
-                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.9" style="margin-right: 5px;"></span>
+                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.9" style="margin-right: 8px;"></span>
                 {%- endif -%}
                 {{ title }}
             </a>
