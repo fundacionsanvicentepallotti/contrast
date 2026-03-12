@@ -1,28 +1,26 @@
 ---
 layout: camisa-detalle
-ide_camisa: 25
-modelo: Event-2
+ide_camisa: "25"
+title: "Event-2"
 categoria: "especial"
 imagen: "/assets/image/camisa/event-2.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
-cuello: smoking. pajarita
-manga: larga
-puño: doble, hexagonal
-bolsillo_cantidad: no aplica
-lugar_del_contraste: no aplica
-otro_detalle: tachon fly front
+manga: "larga"
+cuello: "SMOKING (PAJARITA)"
+puno: "Doble, Hexagonal"
+bolsillo: "No aplica"
+tela_contrast: "No aplica"
+otro_detalle: "tachon fly front"
 
+# --- OPCIONES DE BASE (CORTES) ---
 # Base 1 (Estilo más ajustado)
-silueta_1: slim
-nombre_del_modelo_1: Event-2 slim
-tomar_medidas_con_1: camisa slim
+silueta1: "Slim"
+nombre_del_modelo1: "Event-2 Slim"
+tomar_medidas_con1: "Camisa Slim"
 
 # Base 2 (Estilo tradicional)
-silueta_2: confort
-nombre_del_modelo_2: Event-2 confort
-tomar_medidas_con_2: camisa confort
-
-
+silueta2: "Confort"
+nombre_del_modelo2: "Event-2 Confort"
+tomar_medidas_con2: "Camisa Confort"
 ---
-
