@@ -2,22 +2,29 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-    <div style="display: flex; align-items: center;">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
-                 alt="SMR" 
-                 style="height: 75px; width: auto; display: block;">
-        </a>
-    </div>
-
 <nav style="
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    padding: 5px 20px; 
-    min-height: 60px; /* Aquí controlas el grosor total del menú */
+    padding: 0px 40px; 
+    min-height: 70px;
+    position: sticky; /* Se queda pegado arriba al bajar */
+    top: 0;
+    z-index: 1000;
+    /* --- EFECTO VIDRIO --- */
+    background: rgba(17, 17, 17, 0.75); /* Negro con 75% de transparencia */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria casi invisible */
 ">
     
+    <div style="display: flex; align-items: center;">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
+                 alt="SMR" 
+                 style="height: 55px; width: auto; display: block;">
+        </a>
+    </div>
 
     <div style="display: flex; align-items: center;">
         {%- for item in include.menu -%}
@@ -26,17 +33,20 @@
             {%- assign title = item.title | default: node.title -%}
             
             <a href="{{ url | relative_url }}" 
+               class="nav-link"
                style="
                 color: white; 
-                margin-left: 20px; 
+                margin-left: 25px; 
                 text-decoration: none; 
                 text-transform: uppercase; 
-                font-size: 14px;
+                font-size: 11px;
+                font-weight: 600;
                 display: flex;
                 align-items: center;
+                letter-spacing: 1.5px;
                ">
                 {%- if item.icon -%}
-                    <span uk-icon="icon: {{ item.icon }}" style="margin-right: 8px;"></span>
+                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>
                 {%- endif -%}
                 {{ title }}
             </a>
