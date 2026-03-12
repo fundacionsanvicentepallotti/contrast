@@ -19,12 +19,12 @@ otro_detalle: "No aplica"
 # Configuración para la Base 1 (Estilo más ajustado)
 bases_disponible1: "MONACO"
 silueta1: "SLIM"
-Nombre_del_modelo1: "HORUS"
+nombre_del_modelo1: "HORUS"
 tomar_medidas_con1: "TRAJE DE TIENDA"
 
 # Configuración para la Base 2 (Estilo tradicional)
 bases_disponible2: "2010"
 silueta2: "CONFORT"
-Nombre_del_modelo2: "PIC"
+nombre_del_modelo2: "PIC"
 tomar_medidas_con2: "PRENDA TESTIGO T1022"
 ---
