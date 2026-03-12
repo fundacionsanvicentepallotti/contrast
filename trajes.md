@@ -46,17 +46,23 @@ permalink: /trajes/
         </ul>
     </div>
 
-    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s js-filter" uk-grid="masonry: true">
+    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s js-filter uk-background-muted uk-padding-small uk-border-rounded" uk-grid="masonry: true" style="background-color: #f8f8f8;">
         
-        {% for traje in site.trajes %}
+        {% comment %} 
+           Ordenamos los trajes por el campo 'ide'. 
+           Si tienes un campo numérico llamado 'orden', cambia 'ide' por 'orden'.
+        {% endcomment %}
+        {% assign trajes_ordenados = site.trajes | sort: "ide" %}
+        
+        {% for traje in trajes_ordenados %}
         <div data-categoria="{{ traje.categoria }}">
             <div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-box-shadow-small">
                 
                 <div class="uk-card-badge">
                     {% if traje.categoria == "Especial" %}
-                        <span uk-icon="icon: star; ratio: 1" style="color: #D4AF37;"></span>
+                        <span uk-icon="icon: star; ratio: 1.1" style="color: #D4AF37; filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));"></span>
                     {% elsif traje.categoria == "Esencial" %}
-                        <span uk-icon="icon: check; ratio: 1" style="color: #000000;"></span>
+                        <span uk-icon="icon: minus; ratio: 1" style="color: #000000;"></span>
                     {% endif %}
                 </div>
 
@@ -67,8 +73,8 @@ permalink: /trajes/
                 </div>
 
                 <div class="uk-card-body uk-padding-small uk-text-center">
-                    <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.9rem;">{{ traje.ide }}</h4>
-                    <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem;">{{ traje.categoria }}</p>
+                    <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.9rem; text-transform: capitalize;">{{ traje.ide }}</h4>
+                    <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem; text-transform: lowercase;">{{ traje.categoria }}</p>
                 </div>
 
             </div>
