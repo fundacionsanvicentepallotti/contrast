@@ -2,6 +2,15 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
+    <div style="display: flex; align-items: center;">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
+                 alt="SMR" 
+                 style="height: 70px; width: auto; display: block;">
+        </a>
+    </div>
+
+
 <nav style="
     display: flex; 
     align-items: center; 
@@ -12,19 +21,13 @@
     top: 0;
     z-index: 1000;
     /* --- EFECTO VIDRIO --- */
-    background: rgba(17, 17, 17, 0.75); /* Negro con 75% de transparencia */
+
     backdrop-filter: blur(10px); /* Desenfoque del fondo */
     -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria casi invisible */
 ">
     
-    <div style="display: flex; align-items: center;">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
-                 alt="SMR" 
-                 style="height: 55px; width: auto; display: block;">
-        </a>
-    </div>
+
 
     <div style="display: flex; align-items: center;">
         {%- for item in include.menu -%}
@@ -39,7 +42,7 @@
                 margin-left: 25px; 
                 text-decoration: none; 
                 text-transform: uppercase; 
-                font-size: 11px;
+                font-size: 12px;
                 font-weight: 600;
                 display: flex;
                 align-items: center;
