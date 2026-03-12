@@ -32,15 +32,21 @@ permalink: /trajes/
 
 <div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
 
-    <div class="uk-flex uk-flex-center uk-margin-medium-top">
+    <div class="uk-flex uk-flex-center uk-margin-small-top">
         <ul class="uk-subnav uk-subnav-pill">
-            <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
-            <li uk-filter-control="filter: [data-categoria='Esencial']"><a href="#">Esenciales</a></li>
-            <li uk-filter-control="filter: [data-categoria='Especial']"><a href="#">Especiales</a></li>
+            <li class="uk-active" uk-filter-control>
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1px;">Todos</a>
+            </li>
+            <li uk-filter-control="filter: [data-categoria='Esencial']">
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1px;">Esenciales</a>
+            </li>
+            <li uk-filter-control="filter: [data-categoria='Especial']">
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1px;">Especiales</a>
+            </li>
         </ul>
     </div>
 
-    <div class="uk-grid-medium uk-child-width-1-2@m js-filter" uk-grid="masonry: true">
+    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s js-filter" uk-grid="masonry: true">
         
         {% for traje in site.trajes %}
         <div data-categoria="{{ traje.categoria }}">
@@ -48,21 +54,21 @@ permalink: /trajes/
                 
                 <div class="uk-card-badge">
                     {% if traje.categoria == "Especial" %}
-                        <span uk-icon="icon: star; ratio: 1.2" style="color: #D4AF37;"></span>
+                        <span uk-icon="icon: star; ratio: 1" style="color: #D4AF37;"></span>
                     {% elsif traje.categoria == "Esencial" %}
-                        <span uk-icon="icon: check; ratio: 1.2" style="color: #000000;"></span>
+                        <span uk-icon="icon: check; ratio: 1" style="color: #000000;"></span>
                     {% endif %}
                 </div>
 
                 <div class="uk-card-media-top uk-inline uk-overflow-hidden">
                     <a href="{{ traje.url | relative_url }}" class="uk-transition-toggle" tabindex="0">
-                        <img src="{{ traje.imagen | relative_url }}" alt="{{ traje.title }}" style="height: 500px; width: 100%; object-fit: cover;" class="uk-transition-scale-up uk-transition-opaque">
+                        <img src="{{ traje.imagen | relative_url }}" alt="{{ traje.title }}" style="height: 400px; width: 100%; object-fit: cover;" class="uk-transition-scale-up uk-transition-opaque">
                     </a>
                 </div>
 
                 <div class="uk-card-body uk-padding-small uk-text-center">
-                    <h3 class="uk-card-title uk-text-bold uk-margin-remove">{{ traje.ide }}</h3>
-                    <p class="uk-text-meta uk-margin-remove-top">{{ traje.categoria }}</p>
+                    <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.9rem;">{{ traje.ide }}</h4>
+                    <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem;">{{ traje.categoria }}</p>
                 </div>
 
             </div>
