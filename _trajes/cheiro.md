@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: camisa-detalle
 ide: "6"
 title: "Cheiro"
 categoria: "Especial"
