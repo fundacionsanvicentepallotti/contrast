@@ -9,8 +9,8 @@
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    padding: 3px 40px; 
-    min-height: 75px;
+    padding: 5px 40px; 
+    min-height: 80px;
     position: sticky; /* Se queda pegado arriba al bajar */
     top: 0;
     z-index: 1000;
@@ -21,7 +21,7 @@
         <a href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" 
                  alt="SMR" 
-                 style="height: 73px; width: auto; display: block;">
+                 style="height: 70px; width: auto; display: block;">
         </a>
     </div>
 
@@ -45,7 +45,7 @@
                 letter-spacing: 1.5px;
                ">
                 {%- if item.icon -%}
-                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>
+                    <span uk-icon="icon: {{ item.icon }}; ratio: 0.9" style="margin-right: 9px;"></span>
                 {%- endif -%}
                 {{ title }}
             </a>
