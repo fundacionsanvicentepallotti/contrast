@@ -20,6 +20,35 @@
     font-weight: bold;
     letter-spacing: 1px;
 }
+    /* Hacer el fondo oscuro (overlay) más transparente y suave */
+.uk-offcanvas-overlay::before {
+    background: rgba(0, 0, 0, 0.15) !important; /* Un velo negro muy suave */
+    backdrop-filter: blur(2px); /* Agrega un pequeño desenfoque premium */
+}
+
+/* Ajuste fino de la barra lateral */
+.uk-offcanvas-bar {
+    width: 220px !important; /* Un poco más ancho que 200px para que los textos no se corten */
+    background: #ffffff !important; /* Fondo blanco puro para contraste */
+    color: #333 !important; /* Texto oscuro */
+    padding: 40px 20px;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.05); /* Sombra muy suave hacia la izquierda */
+}
+
+/* Color de los iconos y enlaces dentro del menú móvil */
+.uk-offcanvas-bar .uk-nav-default > li > a {
+    color: #000000 !important;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0; /* Línea divisoria muy tenue */
+}
+
+/* Botón de cerrar del menú móvil */
+.uk-offcanvas-close {
+    color: #000 !important;
+    top: 15px;
+    right: 15px;
+}
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
