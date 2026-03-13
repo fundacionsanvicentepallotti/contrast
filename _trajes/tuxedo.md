@@ -20,6 +20,6 @@ otro_detalle: "Ojal en solapa"
 # Configuración para la Base 1 (Estilo más ajustado)
 bases_disponible1: "2009"
 silueta1: "CONFORT PLUS"
-Nombre_del_modelo1: "TUXEDO"
+nombre_del_modelo1: "TUXEDO"
 tomar_medidas_con1: "PRENDA TESTIGO JONAS"
 ---
