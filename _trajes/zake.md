@@ -1,6 +1,6 @@
 ---
 layout: traje-detalle
-ide: "8"
+ide: "08"
 title: "Zake"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-zake.webp"
@@ -19,7 +19,7 @@ otro_detalle: "Ojal en solapa"
 # Configuración para la Base 1 (Estilo más ajustado)
 bases_disponible1: "MONACO"
 silueta1: "SLIM"
-Nombre_del_modelo1: "ZAKE"
+nombre_del_modelo1: "ZAKE"
 tomar_medidas_con1: "TRAJE DE TIENDA"
 
 # Configuración para la Base 2 (Estilo tradicional)
