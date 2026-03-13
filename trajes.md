@@ -60,20 +60,27 @@ permalink: /trajes/
 
     <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s js-filter uk-padding-small uk-border-rounded" uk-grid="masonry: true" style="background-color: #f8f8f8;">
         
+        {% comment %} Ordenamos por el campo IDE numéricamente {% endcomment %}
         {% assign trajes_ordenados = site.trajes | sort: "ide" %}
         
         {% for traje in trajes_ordenados %}
         <div data-categoria="{{ traje.categoria }}">
-            <div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden card-sombra-soft">
+            
+            <div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden card-sombra-soft uk-transition-toggle">
                 
-                {% if traje.categoria == "Especial" %}
-                <div class="uk-card-badge">
-                    <span uk-icon="icon: star; ratio: 1.1" style="color: #D4AF37; filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));"></span>
-                </div>
-                {% endif %}
-
                 <div class="uk-card-media-top uk-inline uk-overflow-hidden">
-                    <a href="{{ traje.url | relative_url }}" class="uk-transition-toggle" tabindex="0">
+                    
+                    {% if traje.categoria == "Especial" %}
+                    <div style="position: absolute; top: 15px; right: 15px; z-index: 10;" 
+                         uk-scrollspy="cls: uk-animation-scale-up; delay: 300; repeat: false">
+                        <span uk-icon="icon: star; ratio: 1.2" 
+                              class="icon-estrella-especial" 
+                              style="color: #D4AF37; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.4)); transition: transform 0.4s ease-in-out; display: block;">
+                        </span>
+                    </div>
+                    {% endif %}
+
+                    <a href="{{ traje.url | relative_url }}">
                         <img src="{{ traje.imagen | relative_url }}" alt="{{ traje.title }}" class="img-traje-catalogo uk-transition-scale-up uk-transition-opaque">
                     </a>
                 </div>
@@ -82,9 +89,9 @@ permalink: /trajes/
                     <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.9rem; text-transform: capitalize;">
                         {{ traje.ide | downcase }}
                     </h4>
-                    <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem; text-transform: lowercase;">
+                    <!--<p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem; text-transform: lowercase;">
                         {{ traje.categoria }}
-                    </p>
+                    </p>-->
                 </div>
 
             </div>
