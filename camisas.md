@@ -33,28 +33,57 @@ permalink: /camisas/
 
 
 
-<div class="uk-container uk-margin-medium-top">
+<div class="uk-container uk-margin-small-top">
     
     <div uk-filter="target: .js-filter">
-        <ul class="uk-subnav uk-subnav-pill uk-flex-center">
-            <li class="uk-active" uk-filter-control><a href="#">Todas</a></li>
-            <li uk-filter-control="filter: .esencial"><a href="#">Esenciales</a></li>
-            <li uk-filter-control="filter: .especial"><a href="#">Especiales</a></li>
+        <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-margin-small-bottom">
+            <li class="uk-active" uk-filter-control>
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 2px solid transparent;">Todas</a>
+            </li>
+            <li uk-filter-control="filter: .esencial">
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1.5px;">Esenciales</a>
+            </li>
+            <li uk-filter-control="filter: .especial">
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1.5px;">Especiales</a>
+            </li>
         </ul>
 
-        <ul class="js-filter uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
-            {% for camisa in site.camisas %}
-            <li class="{{ camisa.categoria }}">
-                <a href="{{ camisa.url | relative_url }}" class="uk-link-reset">
-                    <div class="uk-card uk-card-default uk-border-rounded uk-overflow-hidden">
-                        <div class="uk-card-media-top">
-                            <img src="{{ camisa.imagen | relative_url }}" alt="{{ camisa.title }}" style="aspect-ratio: 3/4; object-fit: cover;">
+        <ul class="js-filter uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-text-center uk-padding-small uk-border-rounded" uk-grid style="background-color: #fafafa;">
+            
+            {% comment %} Ordenamiento inteligente por ID (1 al 12) {% endcomment %}
+            {% assign camisas_ordenadas = site.camisas | sort: "ide" %}
+            
+            {% for camisa in camisas_ordenadas %}
+            <li class="{{ camisa.categoria | downcase }}">
+                <div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden card-sombra-soft uk-transition-toggle">
+                    
+                    <div class="uk-card-media-top uk-inline uk-overflow-hidden">
+                        
+                        {% if camisa.categoria == "especial" or camisa.categoria == "Especial" %}
+                        <div style="position: absolute; top: 12px; right: 12px; z-index: 10;" 
+                             uk-scrollspy="cls: uk-animation-scale-up; delay: 300; repeat: false">
+                            <span uk-icon="icon: star; ratio: 0.9" 
+                                  class="icon-estrella-especial" 
+                                  style="color: #D4AF37; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.3)); transition: transform 0.4s ease-in-out; display: block;">
+                            </span>
                         </div>
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-margin-remove">{{ camisa.title }}</h3>
-                        </div>
+                        {% endif %}
+
+                        <a href="{{ camisa.url | relative_url }}">
+                            <img src="{{ camisa.imagen | relative_url }}" alt="{{ camisa.title }}" 
+                                 class="img-traje-catalogo uk-transition-scale-up uk-transition-opaque">
+                        </a>
                     </div>
-                </a>
+
+                    <div class="uk-card-body uk-padding-small">
+                        <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.85rem; text-transform: capitalize;">
+                            {{ camisa.ide | downcase }}
+                        </h4>
+                        <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.7rem; text-transform: lowercase;">
+                            {{ camisa.categoria }}
+                        </p>
+                    </div>
+                </div>
             </li>
             {% endfor %}
         </ul>
