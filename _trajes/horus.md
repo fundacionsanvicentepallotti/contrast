@@ -1,6 +1,6 @@
 ---
 layout: traje-detalle
-ide: "5"
+ide: "05"
 title: "Horus"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-horus.webp"
