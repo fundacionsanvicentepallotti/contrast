@@ -70,7 +70,7 @@ permalink: /trajes/
         <div data-categoria="{{ traje.categoria }}">
             <div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-box-shadow-small">
                 
-                <div class="uk-card-badge">
+                <div>
                     {% if traje.categoria == "Especial" %}
                         <span uk-icon="icon: star; ratio: 1.1" style="color: #D4AF37; filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));"></span>
                     {% elsif traje.categoria == "Esencial" %}
