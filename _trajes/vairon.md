@@ -1,6 +1,6 @@
 ---
 layout: traje-detalle
-ide: "7"
+ide: "07"
 title: "Vairon"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-vairon.webp"
@@ -19,12 +19,12 @@ otro_detalle: "No aplica"
 # Configuración para la Base 1 (Estilo más ajustado)
 bases_disponible1: "MONACO"
 silueta1: "SLIM"
-Nombre_del_modelo1: "VAIRON"
+nombre_del_modelo1: "VAIRON"
 tomar_medidas_con1: "TRAJE DE TIENDA"
 
 # Configuración para la Base 2 (Estilo tradicional)
 bases_disponible2: "2010"
 silueta2: "CONFORT"
-Nombre_del_modelo2: "WELLINGTON"
+nombre_del_modelo2: "WELLINGTON"
 tomar_medidas_con2: "PRENDA TESTIGO T1022"
 ---
