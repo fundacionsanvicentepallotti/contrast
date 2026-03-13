@@ -58,7 +58,7 @@ permalink: /trajes/
                 {% if traje.categoria == "Especial" %}
                 <div style="position: absolute; top: 12px; right: 12px; z-index: 10;" 
                      uk-scrollspy="cls: uk-animation-scale-up; delay: 300; repeat: false">
-                    <span uk-icon="icon: star; ratio: 0.8" 
+                    <span uk-icon="icon: star; ratio: 0.9" 
                           class="icon-estrella-especial" 
                           style="color: #D4AF37; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.4)); transition: transform 0.4s ease-in-out; display: block;">
                     </span>
