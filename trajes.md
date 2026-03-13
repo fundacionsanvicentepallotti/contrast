@@ -23,6 +23,18 @@ permalink: /trajes/
     margin-top: 0 !important;
     padding-top: 20px !important;
   }
+  /* Proporción de aspecto 3:4 para las imágenes del catálogo */
+.img-traje-catalogo {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top; /* Enfoca la parte superior (hombros/cara) si la foto es muy alta */
+}
+
+/* Sombra extra suave personalizada */
+.card-sombra-soft {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
