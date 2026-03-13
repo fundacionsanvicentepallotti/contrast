@@ -66,10 +66,11 @@ permalink: /trajes/
         <div data-categoria="{{ traje.categoria }}">
             <div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden card-sombra-soft">
                 
-                <div>
-                    {% if traje.categoria == "Especial" %}
-                        <span uk-icon="icon: star; ratio: 1" style="color: #D4AF37;"></span>
+                {% if traje.categoria == "Especial" %}
+                <div class="uk-card-badge">
+                    <span uk-icon="icon: star; ratio: 1.1" style="color: #D4AF37; filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));"></span>
                 </div>
+                {% endif %}
 
                 <div class="uk-card-media-top uk-inline uk-overflow-hidden">
                     <a href="{{ traje.url | relative_url }}" class="uk-transition-toggle" tabindex="0">
@@ -81,9 +82,9 @@ permalink: /trajes/
                     <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.9rem; text-transform: capitalize;">
                         {{ traje.ide | downcase }}
                     </h4>
-                    <!--<p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem; text-transform: lowercase;">
+                    <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem; text-transform: lowercase;">
                         {{ traje.categoria }}
-                    </p>-->
+                    </p>
                 </div>
 
             </div>
