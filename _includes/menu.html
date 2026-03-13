@@ -1,3 +1,26 @@
+/* Ajuste del ancho del menú lateral (offcanvas) */
+.uk-offcanvas-bar {
+    width: 200px !important; /* Puedes cambiar 200px por el ancho que prefieras */
+}
+
+/* Asegurar que el menú se desplace correctamente desde fuera de la pantalla */
+.uk-offcanvas-flip .uk-offcanvas-bar {
+    right: -200px;
+}
+
+:not(.uk-offcanvas-flip) > .uk-offcanvas-bar {
+    left: -200px;
+}
+
+/* Ajuste de los textos dentro del menú móvil */
+.uk-offcanvas-bar .uk-nav-default > li > a {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
