@@ -60,7 +60,7 @@ permalink: /camisas/
             </li>
         </ul>
 
-        <ul class="js-filter uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-text-center uk-padding-small uk-border-rounded" uk-grid style="background-color: #fafafa;">
+        <ul class="uk-margin-medium-bottom js-filter uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-text-center uk-padding-small uk-border-rounded" uk-grid style="background-color: #fafafa;">
             
             {% comment %} Ordenamiento inteligente por ID (1 al 12) {% endcomment %}
             {% assign camisas_ordenadas = site.camisas | sort: "ide" %}
@@ -99,5 +99,6 @@ permalink: /camisas/
             </li>
             {% endfor %}
         </ul>
+        <a href="#" uk-totop uk-scroll></a>
     </div>
 </div>
