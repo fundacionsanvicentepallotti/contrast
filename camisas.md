@@ -98,7 +98,7 @@ permalink: /camisas/
                 </div>
             </li>
             {% endfor %}
+                <a href="#" uk-totop uk-scroll></a>
         </ul>
-        <a href="#" uk-totop uk-scroll></a>
     </div>
 </div>
