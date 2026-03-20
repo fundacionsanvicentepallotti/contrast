@@ -58,7 +58,7 @@ permalink: /trajes/
         </ul>
     </div>
 
-    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s js-filter uk-padding-small uk-border-rounded uk-margin-medium-bottom" uk-grid="masonry: true" style="background-color: #f8f8f8;">
+    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s js-filter uk-padding-small uk-border-rounded uk-margin-small-bottom" uk-grid="masonry: true" style="background-color: #f8f8f8;">
         
         {% comment %} Ordenamos por el campo IDE numéricamente {% endcomment %}
         {% assign trajes_ordenados = site.trajes | sort: "ide" %}
