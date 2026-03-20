@@ -42,7 +42,7 @@ permalink: /trajes/
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
 
-<div class="uk-container uk-margin-remove-top" uk-filter="target: .js-filter">
+<div class=" uk-margin-remove-top" uk-filter="target: .js-filter">
 
     <div class="uk-flex uk-flex-center uk-margin-small-top">
         <ul class="uk-subnav uk-subnav-pill">
