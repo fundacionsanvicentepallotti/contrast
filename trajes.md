@@ -53,7 +53,7 @@ permalink: /trajes/
                 <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1px;">Esenciales</a>
             </li>
             <li uk-filter-control="filter: [data-categoria='Especial']">
-                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1px;">Especiales</a>
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1px;">Exclusivo</a>
             </li>
         </ul>
     </div>
