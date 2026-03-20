@@ -1,8 +1,8 @@
 ---
 layout: traje-detalle
-ide: "11"
+ide: "Exclusivo 11"
 title: "Galio"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-galio.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
