@@ -56,7 +56,7 @@ permalink: /camisas/
                 <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1.5px;">Esenciales</a>
             </li>
             <li uk-filter-control="filter: .especial">
-                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1.5px;">Especiales</a>
+                <a href="#" class="uk-text-small uk-text-bold" style="text-transform: uppercase; letter-spacing: 1.5px;">Exclusivo</a>
             </li>
         </ul>
 
