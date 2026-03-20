@@ -1,6 +1,6 @@
 ---
 layout: camisa-detalle
-ide_camisa: "5"
+ide_camisa: "Esencial 5"
 title: "Edward-1"
 categoria: "esencial"
 imagen: "/assets/image/camisa/edward-1.webp"
