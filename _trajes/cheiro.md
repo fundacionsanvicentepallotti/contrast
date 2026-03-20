@@ -1,6 +1,6 @@
 ---
 layout: traje-detalle
-ide: "06"
+ide: "Especial 06"
 title: "Cheiro"
 categoria: "Especial"
 imagen: "/assets/image/trajes/tesp-cheiro.webp"
