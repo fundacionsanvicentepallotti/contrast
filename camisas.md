@@ -91,9 +91,9 @@ permalink: /camisas/
                         <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.85rem; text-transform: capitalize; uk-text-center">
                             {{ camisa.title | downcase }}
                         </h4>
-                        <p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.7rem; uk-text-center uk-text-muted text-transform: uppercase;">
-                            {{ camisa.ide }}
-                        </p>
+                        <!--<p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.7rem; uk-text-center uk-text-muted text-transform: uppercase;">
+                            {{ camisa.ide_camisa }}
+                        </p>-->
                     </div>
                 </div>
             </li>
