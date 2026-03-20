@@ -1,8 +1,8 @@
 ---
 layout: traje-detalle
-ide: "08"
+ide: "Exclusivo 08"
 title: "Zake"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-zake.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
