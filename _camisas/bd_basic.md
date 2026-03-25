@@ -3,7 +3,7 @@ layout: camisa-detalle
 ide_camisa: "21"
 title: "Bd basic"
 categoria: "esencial"
-imagen: "/assets/image/camisa/bd-basic.webp"
+imagen: "/assets/image/camisa/bd_basic.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
