@@ -42,13 +42,13 @@
             
                 <nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 20px; min-height: 65px; background: backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000;">
                     
-                    <div class="uk-visible@m" style="display: flex; align-items: center;">
-                        <!--{%- for item in include.menu -%}
+                    <div class="uk-visible@m" style="display: flex; align-items: right;">
+                        {%- for item in include.menu -%}
                             <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 20px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
                                 {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>{%- endif -%}
                                 {{ item.title }}
                             </a>
-                        {%- endfor -%}-->
+                        {%- endfor -%}
                     </div>
                 
                     <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px;">
