@@ -40,34 +40,22 @@
     <div class="uk-float-left">
         <div">
             
+                <nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 20px; min-height: 65px; background: backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000;">
+                    
+                    <div class="uk-visible@m" style="display: flex; align-items: center;">
+                        <!--{%- for item in include.menu -%}
+                            <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 20px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
+                                {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>{%- endif -%}
+                                {{ item.title }}
+                            </a>
+                        {%- endfor -%}-->
+                    </div>
+                
+                    <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px;">
+                        <span uk-icon="icon: menu; ratio: 1.2"></span>
+                    </a>
+                </nav>
 
-
-
-<nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 20px; min-height: 65px; background: backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000;">
-    
-    <!--<div style="display: flex; align-items: center;">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" alt="SMR" style="height: 80px; width: auto;">
-        </a>
-    </div>-->
-
-    <div class="uk-visible@m" style="display: flex; align-items: center;">
-        {%- for item in include.menu -%}
-            <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 20px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
-                {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>{%- endif -%}
-                {{ item.title }}
-            </a>
-        {%- endfor -%}
-    </div>
-
-    <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px;">
-        <span uk-icon="icon: menu; ratio: 1.2"></span>
-    </a>
-</nav>
-
-
-
-        
         </div>
     </div>
 </div>
