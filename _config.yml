@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Trajes", url: "/trajes/", icon: "nut"} # Un icono geométrico que recuerda a un botón
   - {title: "Camisas", url: "/camisas/", icon: "tag"} # Icono de etiqueta de calidad
   - {title: "Sacos", url: "/sacos/", icon: "tag"} # Icono de etiqueta de calidad
-  - {title: "chalecos", url: "/chalecos/", icon: "tag"} # Icono de etiqueta de calidad
+  - {title: "Chalecos", url: "/chalecos/", icon: "tag"} # Icono de etiqueta de calidad
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: WhatsApp, icon: whatsapp, url: "https://wa.me/58412-3133803"}
