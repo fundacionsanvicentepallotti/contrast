@@ -39,3 +39,6 @@ collections:
   camisas:
     output: true
     permalink: /camisas/:path/
+  sacos:
+    output: true
+    permalink: /sacos/:path/
