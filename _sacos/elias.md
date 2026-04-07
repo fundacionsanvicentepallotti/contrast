@@ -1,7 +1,7 @@
 ---
 layout: traje-detalle
 ide: "01"
-title: "Elias"
+title: "Elías"
 categoria: "Esencial"
 imagen: "/assets/image/trajes/saco-elias.webp"
 
