@@ -43,3 +43,6 @@ collections:
   sacos:
     output: true
     permalink: /sacos/:path/
+  chalecos:
+    output: true
+    permalink: /chalecos/:path/
