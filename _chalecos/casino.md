@@ -3,7 +3,7 @@ layout: traje-detalle
 ide: "Chaleco-01"
 title: "Casino"
 categoria: "Esencial"
-imagen: "/assets/image/trajes/ch-casino.webp"
+imagen: "/assets/image/trajes/chal-casino.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 botones_delantero: "4 Boton"
