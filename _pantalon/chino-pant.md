@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "CH-01"
 title: "Chino Pant"
 categoria: "Esencial"
