@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "DN-01"
 title: "Denim Style"
 categoria: "Especial"
