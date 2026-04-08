@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "PV01UT"
 title: "Basic Pant"
 categoria: "Esencial"
