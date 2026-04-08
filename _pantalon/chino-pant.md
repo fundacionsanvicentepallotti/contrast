@@ -3,7 +3,7 @@ layout: traje-detalle
 ide: "CH-01"
 title: "Chino Pant"
 categoria: "Esencial"
-imagen: "/assets/image/trajes/pantalon-ch01.webp"
+imagen: "/assets/image/trajes/pantalon-chino-pant.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 frente: "Sin Pliegues"
