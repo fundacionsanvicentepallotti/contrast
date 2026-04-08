@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "PV03"
 title: "Slim Fit"
 categoria: "Esencial"
