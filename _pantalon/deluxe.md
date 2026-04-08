@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "DX-01"
 title: "Deluxe"
 categoria: "Especial"
