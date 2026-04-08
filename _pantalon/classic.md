@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "PV04"
 title: "Classic"
 categoria: "Esencial"
