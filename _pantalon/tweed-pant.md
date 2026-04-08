@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "TZ-01"
 title: "Tweed Pant"
 categoria: "Especial"
