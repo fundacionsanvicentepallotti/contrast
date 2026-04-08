@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: pantalon-detalle
 ide: "P5-C"
 title: "Cargo Pant"
 categoria: "Especial"
