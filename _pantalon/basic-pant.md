@@ -3,7 +3,7 @@ layout: pantalon-detalle
 ide: "PV01UT"
 title: "Basic Pant"
 categoria: "Esencial"
-imagen: "/assets/image/trajes/pantalon-basic-pant.webp"
+imagen: "/assets/image/trajes/pantalon/basic-pant.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 frente: "Sin Pliegues"
