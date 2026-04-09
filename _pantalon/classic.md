@@ -3,7 +3,7 @@ layout: pantalon-detalle
 ide: "PV04"
 title: "Classic"
 categoria: "Esencial"
-imagen: "/assets/image/trajes/pantalon-pv04.webp"
+imagen: "/assets/image/pantalon/pantalon_cassic.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 frente: "1 Pliegue"
