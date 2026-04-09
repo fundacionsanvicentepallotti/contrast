@@ -1,7 +1,7 @@
 ---
 layout: pantalon-detalle
 ide: "PV01UT"
-title: "Basic Pant"
+title: "PANTALON CLASICO"
 categoria: "Esencial"
 imagen: "/assets/image/pantalon/pantalon_basic.webp"
 
@@ -15,6 +15,6 @@ otro_detalle: "No aplica"
 
 # --- OPCIONES DE BASE (CORTES) ---
 bases_disponible1: "BASIC PANT SLIM"
-silueta1: "SLIM"
-nombre_del_modelo1: "BASIC PANT"
+silueta1: "CONFORT PLUS"
+nombre_del_modelo1: "DANIEL"
 ---
