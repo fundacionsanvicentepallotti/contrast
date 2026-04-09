@@ -3,7 +3,7 @@ layout: pantalon-detalle
 ide: "P5-C"
 title: "Cargo Pant"
 categoria: "Especial"
-imagen: "/assets/image/pantalon/pantalon-cargo.webp"
+imagen: "/assets/image/pantalon/pantalon_cargo.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 frente: "Sin Pliegues"
