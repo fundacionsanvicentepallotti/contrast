@@ -1,17 +1,17 @@
 ---
 layout: pantalon-detalle
 ide: "P5-C"
-title: "Cargo Pant"
-categoria: "Especial"
-imagen: "/assets/image/pantalon/pantalon_cargo.webp"
+title: "Pantalón intermedio"
+categoria: "esencial"
+imagen: "/assets/image/pantalon/pantalon_intermedio.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 frente: "Sin Pliegues"
-bolsillos_traseros: "De parche con tapa"
+bolsillos_traseros: "Doble vivo con ojal y boton"
 bolsillos_delanteros: "Diagonales"
-pespunte: "Triple aguja"
-lugar_del_contraste: "Tapa de bolsillo"
-otro_detalle: "Bolsillos laterales carga"
+pespunte: "Bolsillos delanteros"
+lugar_del_contraste: "No aplica"
+otro_detalle: "No aplica"
 
 # --- OPCIONES DE BASE (CORTES) ---
 bases_disponible1: "PANTALON REGULAR"
