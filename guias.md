@@ -22,8 +22,8 @@ permalink: /guias/
         <li>
             <div class="uk-grid-medium uk-child-width-1-2@m uk-flex-middle" uk-grid>
                 <div uk-lightbox>
-                    <a class="uk-inline" href="{{ '/assets/image/guias/guias-partes-del-saco.webp' | relative_url }}" data-caption="Partes del Saco">
-                        <img src="{{ '/assets/image/guias/guias-partes-del-saco.webp' | relative_url }}" 
+                    <a class="uk-inline" href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" data-caption="Partes del Saco">
+                        <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" 
                              alt="Guía de Sacos" class="uk-border-rounded uk-box-shadow-medium">
                         <div class="uk-position-center uk-overlay uk-overlay-default uk-transition-fade">
                             <span uk-icon="icon: plus; ratio: 2"></span>
