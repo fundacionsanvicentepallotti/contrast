@@ -17,4 +17,5 @@ bases_disponible1: "Base Mini 2-6"
 silueta1: "Regular Kids"
 nombre_del_modelo1: "Pequeño Caballero"
 tomar_medidas_con1: "Tabla de tallas industrial"
+
 ---
