@@ -3,7 +3,7 @@ layout: traje-detalle
 ide: "KID-01"
 title: "Juni2B2AB"
 categoria: "Infantil"
-imagen: "/assets/image/trajes/nino-Juni2B2AB.webp"
+imagen: "/assets/image/trajes/nino-juni2b2ab.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 botones_delantero: "2 Botones"
