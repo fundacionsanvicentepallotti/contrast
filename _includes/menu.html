@@ -1,53 +1,76 @@
 <style>
-/* Tu CSS existente se mantiene igual */
-.uk-offcanvas-bar { width: 200px !important; }
-.uk-offcanvas-flip .uk-offcanvas-bar { right: -200px; }
-:not(.uk-offcanvas-flip) > .uk-offcanvas-bar { left: -200px; }
+/* Ajuste del ancho del menú lateral (offcanvas) */
+.uk-offcanvas-bar {
+    width: 200px !important; /* Puedes cambiar 200px por el ancho que prefieras */
+}
+
+/* Asegurar que el menú se desplace correctamente desde fuera de la pantalla */
+.uk-offcanvas-flip .uk-offcanvas-bar {
+    right: -200px;
+}
+
+:not(.uk-offcanvas-flip) > .uk-offcanvas-bar {
+    left: -200px;
+}
+
+/* Ajuste de los textos dentro del menú móvil */
 .uk-offcanvas-bar .uk-nav-default > li > a {
     font-size: 0.85rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 </style>
 
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="position: sticky; top: 0; z-index: 1000; background: rgba(0,0,0,0.5); backdrop-filter: blur(10px);">
-    
-    <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="{{ '/' | relative_url }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+
+<div class="uk-clearfix">
+    <div class="uk-float-right">
+        <div">
+            
+        <a href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" alt="SMR" style="height: 80px; width: auto;">
-        </a>
+        </a>   
+            
+        </div>
     </div>
+    <div class="uk-float-left">
+        <div">
+            
+                <nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 20px; min-height: 65px; background: backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000;">
+                    
+                    <div class="uk-visible@m" style="display: flex; align-items: right;">
+                        {%- for item in include.menu -%}
+                            <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 20px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
+                                {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 8px;"></span>{%- endif -%}
+                                {{ item.title }}
+                            </a>
+                        {%- endfor -%}
+                    </div>
+                
+                    <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px;">
+                        <span uk-icon="icon: menu; ratio: 1.2"></span>
+                    </a>
+                </nav>
 
-    <div class="uk-navbar-right">
-        
-        <ul class="uk-navbar-nav uk-visible@m">
-            {%- for item in include.menu -%}
-            <li>
-                <a href="{{ item.url | relative_url }}" style="color: white; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">
-                    {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" class="uk-margin-small-right"></span>{%- endif -%}
-                    {{ item.title }}
-                </a>
-            </li>
-            {%- endfor -%}
-        </ul>
-
-        <a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white;">
-            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
-        </a>
-        
+        </div>
     </div>
-</nav>
+</div>
+
 
 <div id="menu-movil" uk-offcanvas="flip: true; overlay: true">
-    <div class="uk-offcanvas-bar" style="background: #111;">
+    <div class="uk-offcanvas-bar" style="background: #111; display: flex; flex-column: column;">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
         <ul class="uk-nav uk-nav-default uk-margin-large-top">
             <li class="uk-nav-header" style="color: #b59410; letter-spacing: 2px;">MENÚ</li>
             <li class="uk-nav-divider"></li>
             {%- for item in include.menu -%}
             <li>
-                <a href="{{ item.url | relative_url }}" style="color: white; font-size: 16px; padding: 15px 0;">
+                <a href="{{ item.url | relative_url }}" style="color: white; font-size: 16px; padding: 15px 0; display: flex; align-items: center;">
                     {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}" class="uk-margin-right"></span>{%- endif -%}
                     {{ item.title }}
                 </a>
