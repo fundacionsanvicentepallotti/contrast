@@ -27,26 +27,27 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div class="uk-navbar-container uk-navbar-transparent" style="display: flex; align-items: center; padding: 0 10px;">
+<div style="display: flex; align-items: center; justify-content: flex-start; background: #2d2d34; padding: 10px 20px; width: 100%;">
     
-    <div style="flex-shrink: 0;">
+    <div style="margin-right: 20px;"> 
         <a href="{{ '/' | relative_url }}">
             <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" alt="SMR" style="height: 80px; width: auto; display: block;">
         </a>
     </div>
 
-    <nav style="display: flex; align-items: center; margin-left: 10px; min-height: 65px; z-index: 1000;">
-        
+    <nav style="display: flex; align-items: center;">
         <div class="uk-visible@m" style="display: flex; align-items: center;">
             {%- for item in include.menu -%}
-                <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 10px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
-                    {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 6px;"></span>{%- endif -%}
+                <a href="{{ item.url | relative_url }}" style="color: white; margin-right: 20px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center; white-space: nowrap;">
+                    {%- if item.icon -%}
+                        <span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 6px;"></span>
+                    {%- endif -%}
                     {{ item.title }}
                 </a>
             {%- endfor -%}
         </div>
 
-        <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px; margin-left: 20px;">
+        <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px;">
             <span uk-icon="icon: menu; ratio: 1.2"></span>
         </a>
     </nav>
