@@ -27,37 +27,29 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div class="uk-clearfix">
-    <div class="uk-float-right">
-        <div>
-            
+<div class="uk-navbar-container uk-navbar-transparent" style="display: flex; align-items: center; padding: 0 10px;">
+    
+    <div style="flex-shrink: 0;">
         <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" alt="SMR" style="height: 80px; width: auto;">
-        </a>   
-            
-        </div>
+            <img src="{{ '/assets/image/logo-smr-blanco.svg' | relative_url }}" alt="SMR" style="height: 80px; width: auto; display: block;">
+        </a>
     </div>
-    <div class="uk-float-left">
-        <div>
-            
-                <nav style="display: flex; align-items: center; justify-content: flex-start; padding: 0px 20px; min-height: 65px; background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000;">
-                    
-                    <div class="uk-visible@m" style="display: flex; align-items: center;">
-                        {%- for item in include.menu -%}
-                            <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 12px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
-                                {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 6px;"></span>{%- endif -%}
-                                {{ item.title }}
-                            </a>
-                        {%- endfor -%}
-                    </div>
-                
-                    <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px; margin-left: auto;">
-                        <span uk-icon="icon: menu; ratio: 1.2"></span>
-                    </a>
-                </nav>
 
+    <nav style="display: flex; align-items: center; margin-left: 10px; min-height: 65px; z-index: 1000;">
+        
+        <div class="uk-visible@m" style="display: flex; align-items: center;">
+            {%- for item in include.menu -%}
+                <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 15px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center;">
+                    {%- if item.icon -%}<span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 6px;"></span>{%- endif -%}
+                    {{ item.title }}
+                </a>
+            {%- endfor -%}
         </div>
-    </div>
+
+        <a class="uk-hidden@m" uk-toggle="target: #menu-movil" style="color: white; padding: 10px; margin-left: 20px;">
+            <span uk-icon="icon: menu; ratio: 1.2"></span>
+        </a>
+    </nav>
 </div>
 
 
