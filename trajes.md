@@ -87,7 +87,7 @@ permalink: /trajes/
 
                 <div class="uk-card-body uk-padding-small uk-text-center">
                     <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.9rem; text-transform: capitalize;">
-                        {{ traje.ide | downcase }}
+                        {{ traje.title | downcase }}
                     </h4>
                     <!--<p class="uk-text-meta uk-margin-remove-top" style="font-size: 0.75rem; text-transform: lowercase;">
                         {{ traje.categoria }}
