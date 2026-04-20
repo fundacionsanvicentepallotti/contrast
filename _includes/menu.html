@@ -38,9 +38,9 @@
     <nav style="display: flex; align-items: center;">
         <div class="uk-visible@m" style="display: flex; align-items: center;">
             {%- for item in include.menu -%}
-                <a href="{{ item.url | relative_url }}" style="color: white; margin-right: 9px; text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; display: flex; align-items: center; white-space: nowrap;">
+                <a href="{{ item.url | relative_url }}" style="color: white; margin-right: 8px; text-decoration: none; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; display: flex; align-items: center; white-space: nowrap;">
                     {%- if item.icon -%}
-                        <span uk-icon="icon: {{ item.icon }}; ratio: 0.7" style="margin-right: 6px;"></span>
+                        <span uk-icon="icon: {{ item.icon }}; ratio: 0.8" style="margin-right: 5px;"></span>
                     {%- endif -%}
                     {{ item.title }}
                 </a>
