@@ -50,21 +50,7 @@ permalink: /guias/
                     </div>
                 </div>
                 <div>
-                    <h3 class="uk-text-bold">Anatomía del Saco</h3>
-                    <p>Referencia visual para la toma de medidas y selección de acabados técnicos. Incluye solapas, picados, ojales y estructura interna.</p>
-                    <hr class="uk-divider-small">
-                    <div class="uk-child-width-1-3" uk-grid uk-lightbox="nav: thumbnav">
-                        <div>
-                            <a href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}">
-                                <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" class="uk-border-rounded" alt="Vista frontal">
-                            </a>
-                        </div>
-                        <!--<div>
-                            <a href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}">
-                                <img src="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" class="uk-border-rounded" alt="Vista frontal">
-                            </a>
-                        </div>-->
-                    </div>
+                    
                 </div>
             </div>
         </li>
