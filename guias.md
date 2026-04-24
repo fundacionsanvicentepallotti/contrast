@@ -41,11 +41,11 @@ permalink: /guias/
     <ul class="uk-switcher uk-margin-medium-top">
         
         <li>
-            <div class="uk-grid-medium uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
                 <div class="uk-text-center">
                     <div uk-lightbox>
                         <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" data-caption="Anatomía del Saco">
-                            <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                        <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                         </a>
                     </div>
                 </div>
