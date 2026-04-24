@@ -37,7 +37,7 @@ permalink: /guias/
     <ul class="uk-switcher uk-margin-medium-top">
         
         <li>
-            <div class="uk-grid-medium uk-child-width-1-3@m uk-flex-middle" uk-grid>
+            <div class="uk-grid-medium uk-child-width-1-2@m uk-flex-middle" uk-grid>
                 <div uk-lightbox class="uk-text-center">
                     <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}">
                         <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded">
