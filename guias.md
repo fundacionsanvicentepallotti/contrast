@@ -5,13 +5,7 @@ permalink: /guias/
 ---
 
 <style>
-    .burbuja-guia {
-        box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
-        transition: transform 0.3s ease;
-    }
-    .burbuja-guia:hover {
-        transform: scale(1.02);
-    }
+
     .img-guia-tecnica {
         max-width: 100%;
         height: auto;
