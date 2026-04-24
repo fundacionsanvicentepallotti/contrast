@@ -29,7 +29,6 @@ permalink: /guias/
     
     <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h2>
-        <p class="uk-text-meta">Explora los detalles anatómicos de cada prenda para una confección precisa.</p>
     </div>
 
     <ul class="uk-flex-center uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
@@ -58,6 +57,11 @@ permalink: /guias/
                         <div>
                             <a href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}">
                                 <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" class="uk-border-rounded" alt="Vista frontal">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}">
+                                <img src="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" class="uk-border-rounded" alt="Vista frontal">
                             </a>
                         </div>
                     </div>
