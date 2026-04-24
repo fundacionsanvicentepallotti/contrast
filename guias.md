@@ -20,11 +20,38 @@ permalink: /guias/
     }
 </style>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+
+
+<!--Napi-->
+
+                        <div class="uk-h3">Thumbnav</div>
+                        <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: thumbnav; slidenav: false">
+                            <div>
+                                <a class="uk-inline" href="/assets/image/categorias/guias-partes-del-saco.webp" data-caption="Caption 1">
+                                    <img src="/assets/image/categorias/guias-partes-del-saco.webp" width="1080" height="1080" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a class="uk-inline" href="/assets/image/categorias/guias-partes-del-saco.webp" data-caption="Caption 2">
+                                    <img src="/assets/image/categorias/guias-partes-del-saco.webp" width="1080" height="1080" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a class="uk-inline" href="/assets/image/categorias/guias-partes-del-saco.webp" data-caption="Caption 3">
+                                    <img src="/assets/image/categorias/guias-partes-del-saco.webp" width="1080" height="1080" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+<!--Napi-->
+
 <div class="uk-container uk-margin-medium-top uk-margin-large-bottom">
     
     <div class="uk-text-center uk-margin-large-bottom">
-        <h1 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h1>
-        <!--<p class="uk-text-meta uk-text-large">Explora la anatomía y detalles técnicos de cada prenda para una personalización precisa.</p>-->
+        <h2 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h2>
     </div>
 
     <ul class="uk-flex-center uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
