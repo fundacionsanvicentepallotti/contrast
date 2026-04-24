@@ -70,7 +70,7 @@ permalink: /guias/
         </li>
 
         <li>
-            <div class="uk-grid-medium uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
                 <div class="uk-text-center">
                     <div uk-lightbox>
                         <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" data-caption="Estructura del Pantalón">
@@ -78,15 +78,12 @@ permalink: /guias/
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="uk-text-bold">Estructura del Pantalón</h3>
-                    <p>Detalles clave para asegurar el ajuste y la comodidad: pretinas, tiros, bolsillos y terminaciones de basta.</p>
-                </div>
+
             </div>
         </li>
 
         <li>
-            <div class="uk-grid-medium uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
                 <div class="uk-text-center">
                     <div uk-lightbox>
                         <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelacamisa.webp' | relative_url }}" data-caption="Detalles de Camisería">
@@ -102,7 +99,7 @@ permalink: /guias/
         </li>
 
         <li>
-            <div class="uk-grid-medium uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
                 <div class="uk-text-center">
                     <div uk-lightbox>
                         <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelchaleco.webp' | relative_url }}" data-caption="Configuración del Chaleco">
