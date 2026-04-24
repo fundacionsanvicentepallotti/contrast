@@ -59,11 +59,11 @@ permalink: /guias/
                                 <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" class="uk-border-rounded" alt="Vista frontal">
                             </a>
                         </div>
-                        <div>
+                        <!--<div>
                             <a href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}">
                                 <img src="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" class="uk-border-rounded" alt="Vista frontal">
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
