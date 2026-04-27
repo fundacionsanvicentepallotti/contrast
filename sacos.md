@@ -55,7 +55,7 @@ permalink: /sacos/
                     <div class="uk-card-body uk-padding-small">
                         <h4 class="uk-card-title uk-text-bold uk-margin-remove" style="font-size: 0.85rem; text-transform: capitalize;">
                             {% comment %} 4. CAMBIO: Usar saco.título {% endcomment %}
-                            {{ saco.título | downcase }}
+                            {{ saco.title | downcase }}
                         </h4>
                     </div>
                 </div>
