@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "woman"
-permalink: /guias/
+permalink: /wo/
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
