@@ -25,7 +25,7 @@ permalink: /guias/
     }
 </style>
 
-<div class="uk-container uk-margin-medium-top uk-margin-large-bottom">
+<div class="uk-container uk-margin-xsmall-top uk-margin-xsmall-bottom">
     
     <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h2>
