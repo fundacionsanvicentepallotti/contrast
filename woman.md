@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Guías Visuales de Confección"
+title: "woman"
 permalink: /guias/
 ---
 
@@ -28,14 +28,14 @@ permalink: /guias/
 <div class="uk-container uk-margin-top uk-margin-xsmall-bottom">
     
     <div class="uk-text-center uk-margin-xsmall-bottom">
-        <h2 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h2>
+        <h2 class="uk-heading-divider uk-text-bold">Woman</h2>
     </div>
 
     <ul class="uk-flex-center uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
-        <li><a href="#">Sacos</a></li>
-        <li><a href="#">Pantalones</a></li>
-        <li><a href="#">Camisas</a></li>
-        <li><a href="#">Chalecos</a></li>
+        <li><a href="#">Woman-1</a></li>
+        <li><a href="#">Woman-2</a></li>
+        <li><a href="#">Woman-3</a></li>
+        <li><a href="#">Woman-4</a></li>
     </ul>
 
     <ul class="uk-switcher uk-margin-medium-top">
