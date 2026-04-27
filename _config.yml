@@ -24,7 +24,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Pantalones", url: "/pantalon/", icon: "list"} # Icono de etiqueta de calidad
   - {title: "Base niños", url: "/base-ninos/", icon: "heart"} # Icono de etiqueta de calidad
   - {title: "Guías", url: "/guias/", icon: "info"} # Icono de etiqueta de calidad
-  - {title: "Woman", url: "/guias/", icon: "info"} # Icono de etiqueta de calidad
+  - {title: "Woman", url: "/wo/", icon: "info"} # Icono de etiqueta de calidad
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: WhatsApp, icon: whatsapp, url: "https://wa.me/58412-3133803"}
