@@ -38,7 +38,7 @@ permalink: /guias/
         <li><a href="#">Chalecos</a></li>
     </ul>
 
-    <ul class="uk-switcher uk-margin-xsmall-top">
+    <ul class="uk-switcher uk-margin-medium-top">
         
         <li>
             <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
