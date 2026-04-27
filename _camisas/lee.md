@@ -3,7 +3,7 @@ layout: camisa-detalle
 ide_camisa: "23"
 title: "Lee"
 categoria: "esencial"
-imagen: "/assets/image/camisa/lee.webp"
+imagen: "/assets/image/camisa/lee.web.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
