@@ -93,10 +93,6 @@ permalink: /guias/
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="uk-text-bold">Configuración del Chaleco</h3>
-                    <p>Detalles técnicos para el diseño frontal y ajuste trasero. Cruces simples y dobles para diferentes niveles de formalidad.</p>
-                </div>
             </div>
         </li>
     </ul>
