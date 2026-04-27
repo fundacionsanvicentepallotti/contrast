@@ -77,10 +77,6 @@ permalink: /guias/
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="uk-text-bold">Detalles de Camisería</h3>
-                    <p>Referencia técnica para la personalización de cuellos, puños y pecheras. Esencial para el diseño a medida.</p>
-                </div>
             </div>
         </li>
 
