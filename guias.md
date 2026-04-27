@@ -27,7 +27,7 @@ permalink: /guias/
 
 <div class="uk-container uk-margin-xsmall-top uk-margin-xsmall-bottom">
     
-    <div class="uk-text-center uk-margin-large-bottom">
+    <div class="uk-text-center uk-margin-xsmall-bottom">
         <h2 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h2>
     </div>
 
@@ -38,7 +38,7 @@ permalink: /guias/
         <li><a href="#">Chalecos</a></li>
     </ul>
 
-    <ul class="uk-switcher uk-margin-medium-top">
+    <ul class="uk-switcher uk-margin-xsmall-top">
         
         <li>
             <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
