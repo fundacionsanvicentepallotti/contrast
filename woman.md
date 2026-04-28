@@ -59,23 +59,13 @@ permalink: /wo/
             <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
                 <div class="uk-text-center">
                     <div uk-lightbox>
-                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco-woman.webp' | relative_url }}" data-caption="Estructura del Pantalón">
-                            <img src="{{ '/assets/image/categorias/guias-partes-del-saco-woman.webp' | relative_url }}" alt="Guía de Pantalones" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias_partes_del_saco_woman.webp' | relative_url }}" data-caption="Anatomía del Saco">
+                        <img src="{{ '/assets/image/categorias/guias_partes_del_saco_woman.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                         </a>
                     </div>
                 </div>
-
-            </div>
-        </li>
-
-        <li>
-            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-text-center">
-                    <div uk-lightbox>
-                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco-woman.webp' | relative_url }}" data-caption="Detalles de Camisería">
-                            <img src="{{ '/assets/image/categorias/guias-partes-del-saco-woman.webp' | relative_url }}" alt="Guía de Camisas Woman" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
-                        </a>
-                    </div>
+                <div>
+                    
                 </div>
             </div>
         </li>
@@ -84,12 +74,17 @@ permalink: /wo/
             <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
                 <div class="uk-text-center">
                     <div uk-lightbox>
-                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco-woman.webp' | relative_url }}" data-caption="Configuración del Chaleco">
-                            <img src="{{ '/assets/image/categorias/guias-partes-del-saco-woman.webp' | relative_url }}" alt="Guía de Chalecos Woman" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias_partes_del_saco_woman.webp' | relative_url }}" data-caption="Anatomía del Saco">
+                        <img src="{{ '/assets/image/categorias/guias_partes_del_saco_woman.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                         </a>
                     </div>
                 </div>
+                <div>
+                    
+                </div>
             </div>
         </li>
+
+
     </ul>
 </div>
