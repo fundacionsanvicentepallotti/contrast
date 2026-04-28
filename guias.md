@@ -77,6 +77,7 @@ permalink: /guias/
                         <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelacamisa.webp' | relative_url }}" data-caption="Detalles de Camisería">
                             <img src="{{ '/assets/image/categorias/guias_partesdelacamisa.webp' | relative_url }}" alt="Guía de Camisas" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                         </a>
+                        <a href="{{ '/assets/image/categorias/silueta_camisa.webp' | relative_url }}" data-caption="Siluetas de Camisa"></a>
                     </div>
                 </div>
             </div>
