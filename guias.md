@@ -19,15 +19,16 @@ permalink: /guias/
     .burbuja-guia:hover .img-guia-tecnica {
         transform: scale(1.02);
     }
+    /* Estilo para el tema de contraste */
     .uk-subnav-pill > .uk-active > a {
-        background-color: #000 !important; /* Ajuste para el tema de contraste */
+        background-color: #000 !important; 
         color: #fff !important;
     }
 </style>
 
-<div class="uk-container uk-margin-top uk-margin-xsmall-bottom">
+<div class="uk-container uk-margin-top uk-margin-large-bottom">
     
-    <div class="uk-text-center uk-margin-xsmall-bottom">
+    <div class="uk-text-center uk-margin-medium-bottom">
         <h2 class="uk-heading-divider uk-text-bold">Guías Técnicas SMR</h2>
     </div>
 
@@ -41,56 +42,44 @@ permalink: /guias/
     <ul class="uk-switcher uk-margin-medium-top">
         
         <li>
-            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-text-center">
+            <div class="uk-text-center">
                 <div uk-lightbox>
                     <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" data-caption="Anatomía del Saco">
-                        <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de partes del Saco" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                        <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                     </a>
-                 <a href="{{ '/assets/image/categorias/silueta_saco.webp' | relative_url }}" data-caption="Siluetas de Saco "></a>
-                </div>
-                </div>
-                <div>
-                    
+                    <a href="{{ '/assets/image/categorias/silueta_saco.webp' | relative_url }}" data-caption="Siluetas de Saco"></a>
                 </div>
             </div>
         </li>
 
         <li>
-            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-text-center">
-                    <div uk-lightbox>
-                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" data-caption="Estructura del Pantalón">
-                            <img src="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" alt="Guía de Pantalones" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
-                        </a>
-                        <a href="{{ '/assets/image/categorias/silueta_pantalon.webp' | relative_url }}" data-caption="Siluetas de Pantalón"></a>
-                    </div>
-                </div>
-
-            </div>
-        </li>
-
-        <li>
-            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-text-center">
-                    <div uk-lightbox>
-                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelacamisa.webp' | relative_url }}" data-caption="Detalles de Camisería">
-                            <img src="{{ '/assets/image/categorias/guias_partesdelacamisa.webp' | relative_url }}" alt="Guía de Camisas" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
-                        </a>
-                        <a href="{{ '/assets/image/categorias/silueta_camisa.webp' | relative_url }}" data-caption="Siluetas de Camisa"></a>
-                    </div>
+            <div class="uk-text-center">
+                <div uk-lightbox>
+                    <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" data-caption="Estructura del Pantalón">
+                        <img src="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" alt="Guía de Pantalones" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                    </a>
+                    <a href="{{ '/assets/image/categorias/silueta_pantalon.webp' | relative_url }}" data-caption="Siluetas de Pantalón"></a>
                 </div>
             </div>
         </li>
 
         <li>
-            <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-text-center">
-                    <div uk-lightbox>
-                        <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelchaleco.webp' | relative_url }}" data-caption="Configuración del Chaleco">
-                            <img src="{{ '/assets/image/categorias/guias-partesdelchaleco.webp' | relative_url }}" alt="Guía de Chalecos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
-                        </a>
-                    </div>
+            <div class="uk-text-center">
+                <div uk-lightbox>
+                    <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelacamisa.webp' | relative_url }}" data-caption="Detalles de Camisería">
+                        <img src="{{ '/assets/image/categorias/guias-partesdelacamisa.webp' | relative_url }}" alt="Guía de Camisas" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                    </a>
+                    <a href="{{ '/assets/image/categorias/silueta_camisa.webp' | relative_url }}" data-caption="Siluetas de Camisa"></a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="uk-text-center">
+                <div uk-lightbox>
+                    <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelchaleco.webp' | relative_url }}" data-caption="Configuración del Chaleco">
+                        <img src="{{ '/assets/image/categorias/guias-partesdelchaleco.webp' | relative_url }}" alt="Guía de Chalecos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                    </a>
                 </div>
             </div>
         </li>
