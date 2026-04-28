@@ -63,6 +63,7 @@ permalink: /guias/
                         <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" data-caption="Estructura del Pantalón">
                             <img src="{{ '/assets/image/categorias/guias-partesdelpantalon.webp' | relative_url }}" alt="Guía de Pantalones" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                         </a>
+                        <a href="{{ '/assets/image/categorias/silueta_pantalon.webp' | relative_url }}" data-caption="Siluetas de Pantalón"></a>
                     </div>
                 </div>
 
