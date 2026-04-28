@@ -45,9 +45,9 @@ permalink: /guias/
                 <div class="uk-text-center">
                 <div uk-lightbox>
                     <a class="uk-inline burbuja-guia" href="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" data-caption="Anatomía del Saco">
-                        <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de Sacos" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
+                        <img src="{{ '/assets/image/categorias/guias-partes-del-saco.webp' | relative_url }}" alt="Guía de partes del Saco" class="img-guia-tecnica uk-border-rounded uk-box-shadow-medium">
                     </a>
-                 <a href="{{ '/assets/image/categorias/silueta_saco.webp' | relative_url }}" data-caption="Detalles adicionales"></a>
+                 <a href="{{ '/assets/image/categorias/silueta_saco.webp' | relative_url }}" data-caption="Siluetas de Saco "></a>
                 </div>
                 </div>
                 <div>
