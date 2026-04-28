@@ -35,7 +35,6 @@ permalink: /wo/
         <li><a href="#">Woman-1</a></li>
         <li><a href="#">Woman-2</a></li>
         <li><a href="#">Woman-3</a></li>
-        <li><a href="#">Woman-4</a></li>
     </ul>
 
     <ul class="uk-switcher uk-margin-medium-top">
