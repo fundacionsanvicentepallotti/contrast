@@ -1,7 +1,7 @@
 ---
 layout: camisa-detalle
 ide_camisa: "21"
-title: "LOMBARD"
+title: "Lombard"
 categoria: "especial"
 imagen: "/assets/image/camisa/lombard.webp"
 
