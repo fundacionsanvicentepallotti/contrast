@@ -26,7 +26,7 @@ tomar_medidas_con2: "Camisa Confort"
 
 # Botones
 boton_cuello:  "/assets/image/camisa/deta/alianz_cuello.webp"
-boton_manga:  "/assets/image/camisa/deta/alianz_manga.webp"
+boton_manga:  "/assets/image/camisa/deta/alianz_boton.webp"
 boton_puno:  "/assets/image/camisa/deta/alianz_puno.webp"
 
 ---
