@@ -24,4 +24,9 @@ silueta2: "Confort"
 nombre_del_modelo2: "Amalio Confort"
 tomar_medidas_con2: "Camisa Confort"
 
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/amalio_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/amalio_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/amalio_puno.webp"
+
 ---
