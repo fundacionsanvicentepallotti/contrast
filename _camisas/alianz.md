@@ -24,4 +24,9 @@ silueta2: "Confort"
 nombre_del_modelo2: "Alianz Confort"
 tomar_medidas_con2: "Camisa Confort"
 
+# Botones
+boton_cuello:  "/assets/image/camisa/alianz_cuello.webp"
+boton_manga:  "/assets/image/camisa/alianz_manga.webp"
+boton_puno:  "/assets/image/camisa/alianz_puno.webp"
+
 ---
