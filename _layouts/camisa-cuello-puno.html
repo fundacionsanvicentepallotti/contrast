@@ -2,17 +2,9 @@
 layout: default
 ---
 <style>
-    .burbuja-lujo {
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
-        transition: all 0.5s ease-in-out;
-    }
-    .burbuja-lujo:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
-    }
-    .float-anim {
-        animation: floating 4s ease-in-out infinite;
-    }
+    .burbuja-lujo { box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important; transition: all 0.5s ease-in-out; }
+    .burbuja-lujo:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important; }
+    .float-anim { animation: floating 4s ease-in-out infinite; }
     @keyframes floating {
         0% { transform: translateY(0px); }
         50% { transform: translateY(-8px); }
@@ -26,7 +18,7 @@ layout: default
 
 <div class="uk-container uk-container-small uk-margin-small-top uk-margin-large-bottom">
     
-    <div class="uk-grid-small uk-margin-small-bottom" uk-grid>
+    <div class="uk-grid-small" uk-grid>
         <div class="uk-width-1-1 uk-width-2-3@m" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
             <div class="uk-overflow-hidden uk-border-rounded">
                 <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" style="display: block; width: 100%; height: auto;">
@@ -34,37 +26,17 @@ layout: default
         </div>
 
         <div class="uk-width-1-1 uk-width-1-3@m">
-
-            
-            
-<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-row uk-flex-column@m uk-margin-xlarge-top" style="gap: 20px;">
-    
-    <div class="uk-flex uk-flex-column uk-flex-middle float-anim" uk-scrollspy="cls: uk-animation-scale-up; delay: 900; repeat: false">
-        <div class="uk-border-circle uk-overflow-hidden burbuja-lujo" style="width: 100px; height: 100px; border: 4px solid #2D2D34; display: flex; align-items: center; justify-content: center;">
-            <img src="{{ page.boton_cuello | relative_url }}" alt="Detalle Cuello" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-row uk-flex-column@m uk-margin-xlarge-top" style="gap: 20px;">
+                {% for item in (1..3) %}
+                <div class="uk-flex uk-flex-column uk-flex-middle float-anim" uk-scrollspy="cls: uk-animation-scale-up; delay: {{ item | times: 200 | plus: 700 }}; repeat: false">
+                    <div class="uk-border-circle uk-overflow-hidden burbuja-lujo" style="width: 100px; height: 100px; border: 3px solid #B5B192; display: flex; align-items: center; justify-content: center;">
+                        <img src="{% if item == 1 %}{{ page.boton_cuello | relative_url }}{% elsif item == 2 %}{{ page.boton_puno | relative_url }}{% else %}{{ page.boton_manga | relative_url }}{% endif %}" alt="Detalle" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <p class="uk-text-meta uk-text-bold uk-text-uppercase uk-margin-small-top" style="letter-spacing: 1px;">{% if item == 1 %}Cuello{% elsif item == 2 %}Puño{% else %}Manga{% endif %}</p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        <p class="uk-text-meta uk-text-bold uk-text-uppercase uk-margin-small-top" style="letter-spacing: 1px;">Cuello</p>
-    </div>
-                    
-    <div class="uk-flex uk-flex-column uk-flex-middle float-anim" uk-scrollspy="cls: uk-animation-scale-up; delay: 1100; repeat: false">
-        <div class="uk-border-circle uk-overflow-hidden burbuja-lujo" style="width: 100px; height: 100px; border: 4px solid #2D2D34; display: flex; align-items: center; justify-content: center;">
-            <img src="{{ page.boton_puno | relative_url }}" alt="Detalle Puño" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <p class="uk-text-meta uk-text-bold uk-text-uppercase uk-margin-small-top" style="letter-spacing: 1px;">Puño</p>
-    </div>
-                    
-    <div class="uk-flex uk-flex-column uk-flex-middle float-anim" uk-scrollspy="cls: uk-animation-scale-up; delay: 1300; repeat: false">
-        <div class="uk-border-circle uk-overflow-hidden burbuja-lujo" style="width: 100px; height: 100px; border: 4px solid #2D2D34; display: flex; align-items: center; justify-content: center;">
-            <img src="{{ page.boton_manga | relative_url }}" alt="Detalle Manga" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <p class="uk-text-meta uk-text-bold uk-text-uppercase uk-margin-small-top" style="letter-spacing: 1px;">Manga</p>
-    </div>
-             
-</div>
-
-            
-            
-        </div>    
     </div>
 
     <div class="uk-section uk-section-xsmall">
@@ -95,123 +67,26 @@ layout: default
 
         <div class="uk-margin-medium-top uk-padding-large uk-border-rounded" style="background-color: #2D2D34; border: 1px solid #eee;">
             <div class="uk-grid-column-large uk-grid-row-large uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
-                <div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-margin-right"><span uk-icon="icon: sign-in" class="uk-text-primary"></span></div>
-                        <div>
-                            <dt class="uk-text-meta uk-text-bold uk-text-uppercase">Manga</dt>
-                            <dd class="uk-margin-remove">{{ page.manga }}</dd>
-                        </div>
-                    </div>
                 </div>
-                <div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-margin-right"><span uk-icon="icon: more" class="uk-text-primary"></span></div>
-                        <div>
-                            <dt class="uk-text-meta uk-text-bold uk-text-uppercase">Cuello</dt>
-                            <dd class="uk-margin-remove">{{ page.cuello }}</dd>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-margin-right"><span uk-icon="icon: menu" class="uk-text-primary"></span></div>
-                        <div>
-                            <dt class="uk-text-meta uk-text-bold uk-text-uppercase">Puño</dt>
-                            <dd class="uk-margin-remove">{{ page.puno }}</dd>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-margin-right"><span uk-icon="icon: tag" class="uk-text-primary"></span></div>
-                        <div>
-                            <dt class="uk-text-meta uk-text-bold uk-text-uppercase">Bolsillo</dt>
-                            <dd class="uk-margin-remove">{{ page.bolsillo }}</dd>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-margin-right"><span uk-icon="icon: paint-bucket" class="uk-text-primary"></span></div>
-                        <div>
-                            <dt class="uk-text-meta uk-text-bold uk-text-uppercase">Lugar del contraste</dt>
-                            <dd class="uk-margin-remove">{{ page.tela_contrast }}</dd>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-margin-right"><span uk-icon="icon: settings" class="uk-text-primary"></span></div>
-                        <div>
-                            <dt class="uk-text-meta uk-text-bold uk-text-uppercase">Otros detalles</dt>
-                            <dd class="uk-margin-remove">{{ page.otro_detalle }}</dd>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            </div>
-
-
-
- 
-
-
-
-            
-        <!--pego aka-->    
-    <div class="uk-section uk-section-xsmall">
-
-                            <!--pego aka-->
-                            <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
-                                <hr>
-                                <div class="uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
-                                    
-                                    <div class="uk-width-auto">
-                                        {% if page.previous %}
-                                            <a href="{{ page.previous.url | relative_url }}" class="uk-button uk-button-text">
-                                                <span uk-icon="arrow-left"></span> {{ page.previous.nombre_del_modelo1 }}
-                                            </a>
-                                        {% else %}
-                                            <span class="uk-text-muted">Inicio</span>
-                                        {% endif %}
-                                    </div>
-                            
-                                    <div class="uk-width-auto">
-                                        <a href="/contrast/camisas/" class="uk-icon-button" uk-icon="grid" uk-tooltip="Volver al catálogo"></a>
-                                    </div>
-                            
-                                    <div class="uk-width-auto">
-                                        {% if page.next %}
-                                            <a href="{{ page.next.url | relative_url }}" class="uk-button uk-button-text">
-                                                {{ page.next.nombre_del_modelo1 }} <span uk-icon="arrow-right"></span>
-                                            </a>
-                                        {% else %}
-                                            <span class="uk-text-muted">Fin</span>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>     
-                            <!--pego aka-->
-
-
-<!--subir-->
-<div class="uk-flex uk-flex-right">
-    <a href="#" uk-totop uk-scroll></a>
-</div>
-<!--subir-->
-
-
-
-        
+        </div>
     </div>
-    <!--pego aka-->
 
-
-
-
-
-        
+    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+        <hr>
+        <div class="uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                {% if page.previous %}<a href="{{ page.previous.url | relative_url }}" class="uk-button uk-button-text"><span uk-icon="arrow-left"></span> {{ page.previous.nombre_del_modelo1 }}</a>{% else %}<span class="uk-text-muted">Inicio</span>{% endif %}
+            </div>
+            <div class="uk-width-auto">
+                <a href="/contrast/camisas/" class="uk-icon-button" uk-icon="grid" uk-tooltip="Volver al catálogo"></a>
+            </div>
+            <div class="uk-width-auto">
+                {% if page.next %}<a href="{{ page.next.url | relative_url }}" class="uk-button uk-button-text">{{ page.next.nombre_del_modelo1 }} <span uk-icon="arrow-right"></span></a>{% else %}<span class="uk-text-muted">Fin</span>{% endif %}
+            </div>
+        </div>
+        <div class="uk-flex uk-flex-right">
+            <a href="#" uk-totop uk-scroll></a>
+        </div>
     </div>
+
 </div>
