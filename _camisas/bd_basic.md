@@ -24,4 +24,10 @@ silueta2: "Confort"
 nombre_del_modelo2: "Bd basic Confort"
 tomar_medidas_con2: "Camisa Confort"
 
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/bd_basic_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/bd_basic_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/bd_basic_puno.webp"
+
+
 ---
