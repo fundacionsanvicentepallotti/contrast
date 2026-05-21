@@ -140,48 +140,45 @@ layout: default
                         </div>
                     </div>
                 </div>
-
-
-<!--pego aka-->
-<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
-    <hr>
-    <div class="uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
-        
-        <div class="uk-width-auto">
-            {% if page.previous %}
-                <a href="{{ page.previous.url | relative_url }}" class="uk-button uk-button-text">
-                    <span uk-icon="arrow-left"></span> {{ page.previous.nombre_del_modelo1 }}
-                </a>
-            {% else %}
-                <span class="uk-text-muted">Inicio</span>
-            {% endif %}
-        </div>
-
-        <div class="uk-width-auto">
-            <a href="/contrast/camisas/" class="uk-icon-button" uk-icon="grid" uk-tooltip="Volver al catálogo"></a>
-        </div>
-
-        <div class="uk-width-auto">
-            {% if page.next %}
-                <a href="{{ page.next.url | relative_url }}" class="uk-button uk-button-text">
-                    {{ page.next.nombre_del_modelo1 }} <span uk-icon="arrow-right"></span>
-                </a>
-            {% else %}
-                <span class="uk-text-muted">Fin</span>
-            {% endif %}
-        </div>
-    </div>
-</div>
-       
-<!--pego aka-->
-
                 
             </div>
         </div>
+
+
+
+                            <!--pego aka-->
+                            <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+                                <hr>
+                                <div class="uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
+                                    
+                                    <div class="uk-width-auto">
+                                        {% if page.previous %}
+                                            <a href="{{ page.previous.url | relative_url }}" class="uk-button uk-button-text">
+                                                <span uk-icon="arrow-left"></span> {{ page.previous.nombre_del_modelo1 }}
+                                            </a>
+                                        {% else %}
+                                            <span class="uk-text-muted">Inicio</span>
+                                        {% endif %}
+                                    </div>
+                            
+                                    <div class="uk-width-auto">
+                                        <a href="/contrast/camisas/" class="uk-icon-button" uk-icon="grid" uk-tooltip="Volver al catálogo"></a>
+                                    </div>
+                            
+                                    <div class="uk-width-auto">
+                                        {% if page.next %}
+                                            <a href="{{ page.next.url | relative_url }}" class="uk-button uk-button-text">
+                                                {{ page.next.nombre_del_modelo1 }} <span uk-icon="arrow-right"></span>
+                                            </a>
+                                        {% else %}
+                                            <span class="uk-text-muted">Fin</span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                                   
+                            <!--pego aka-->
+
+        
     </div>
 </div>
-<!--pego aka-->
-
-
-
-
