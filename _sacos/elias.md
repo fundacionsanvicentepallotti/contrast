@@ -1,5 +1,5 @@
 ---
-layout: sacos-detalle
+layout: traje-detalle
 ide: "01"
 title: "Elías"
 categoria: "esencial"
