@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "03"
 title: "King"
-categoria: "Esencial"
+categoria: "esencial"
 imagen: "/assets/image/trajes/saco-king.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
