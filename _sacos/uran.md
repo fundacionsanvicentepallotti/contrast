@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "02"
 title: "Uran"
-categoria: "Esencial"
+categoria: "esencial"
 imagen: "/assets/image/trajes/saco-uran.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
