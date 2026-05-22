@@ -2,7 +2,7 @@
 layout: sacos-detalle
 ide: "01"
 title: "Elías"
-categoria: "Esencial"
+categoria: "esencial"
 imagen: "/assets/image/trajes/saco-elias.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
