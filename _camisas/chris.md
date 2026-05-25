@@ -25,8 +25,8 @@ nombre_del_modelo2: "Chris Confort"
 tomar_medidas_con2: "Camisa Confort"
 
 # Botones
-boton_cuello:  "/assets/image/camisa/deta/chris__cuello.webp"
-boton_manga:  "/assets/image/camisa/deta/chris__boton.webp"
-boton_puno:  "/assets/image/camisa/deta/chris__puno.webp"
+boton_cuello:  "/assets/image/camisa/deta/chris_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/chris_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/chris_puno.webp"
 
 ---
