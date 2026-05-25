@@ -24,6 +24,29 @@ layout: default
             height: 150px;
         }
     }
+
+
+  /* Clase responsiva con la transición suave */
+    .burbuja-responsive {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+    }
+
+    /* Efecto al pasar el cursor */
+    .burbuja-responsive:hover {
+        transform: scale(1.15); /* Escala al 115% */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Opcional: añade un poquito de sombra al crecer */
+    }
+
+    /* Tamaños por dispositivo */
+    @media (min-width: 768px) {
+        .burbuja-responsive { width: 100px; height: 100px; }
+    }
+    @media (min-width: 960px) {
+        .burbuja-responsive { width: 130px; height: 130px; }
+    }
 </style>
 
 
