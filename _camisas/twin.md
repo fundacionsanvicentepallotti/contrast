@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "19"
 title: "Twin"
 categoria: "esencial"
@@ -23,5 +23,10 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Twin Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/twin_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/twin_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/twin_puno.webp"
 
 ---
