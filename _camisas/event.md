@@ -25,8 +25,8 @@ nombre_del_modelo2: "Event Confort"
 tomar_medidas_con2: "Camisa Confort"
 
 # Botones
-boton_cuello:  "/assets/image/camisa/deta/event_slim_2_cuello.webp"
-boton_manga:  "/assets/image/camisa/deta/event_slim_2_boton.webp"
-boton_puno:  "/assets/image/camisa/deta/event_slim_2_puno.webp"
+boton_cuello:  "/assets/image/camisa/deta/event_slim_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/event_slim_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/event_slim_puno.webp"
 
 ---
