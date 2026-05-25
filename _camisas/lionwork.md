@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "4"
 title: "Lionwork"
 categoria: "esencial"
@@ -23,4 +23,11 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Lionwork Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/Lionwork_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/Lionwork_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/Lionwork_puno.webp"
+
+
 ---
