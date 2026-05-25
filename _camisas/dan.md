@@ -25,7 +25,7 @@ nombre_del_modelo2: "Dan Confort"
 tomar_medidas_con2: "Camisa Confort"
 
 # Botones
-boton_cuello:  "/assets/image/camisa/deta/dan_uello.webp"
+boton_cuello:  "/assets/image/camisa/deta/dan_cuello.webp"
 boton_manga:  "/assets/image/camisa/deta/dan_boton.webp"
 boton_puno:  "/assets/image/camisa/deta/dan_puno.webp"
 
