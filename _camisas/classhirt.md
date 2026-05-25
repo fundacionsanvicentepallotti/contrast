@@ -25,8 +25,8 @@ nombre_del_modelo2: "Classhirt Confort"
 tomar_medidas_con2: "Camisa Confort"
 
 # Botones
-boton_cuello:  "/assets/image/camisa/deta/classhirt__cuello.webp"
-boton_manga:  "/assets/image/camisa/deta/classhirt__boton.webp"
-boton_puno:  "/assets/image/camisa/deta/classhirt__puno.webp"
+boton_cuello:  "/assets/image/camisa/deta/classhirt_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/classhirt_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/classhirt_puno.webp"
 
 ---
