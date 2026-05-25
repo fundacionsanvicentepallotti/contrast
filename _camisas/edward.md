@@ -1,7 +1,7 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide: "1"
-title: "Edward"
+title: "Eduard Slim"
 categoria: "esencial"
 imagen: "/assets/image/camisa/edward.webp"
 
@@ -23,6 +23,11 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Eduard Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/edward_slim_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/edward_slim_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/edward_slim_puno.webp"
 
 ---
 
