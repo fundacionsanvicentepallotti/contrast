@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "13"
 title: "Italian"
 categoria: "esencial"
@@ -23,5 +23,11 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Italian Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/Italian_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/Italian_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/Italian_puno.webp"
 
 ---
