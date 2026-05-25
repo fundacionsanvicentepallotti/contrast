@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "Esencial 5"
 title: "Edward-1"
 categoria: "esencial"
@@ -23,5 +23,10 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Edward-1 Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/edward_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/edward_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/edward_puno.webp"
 
 ---
