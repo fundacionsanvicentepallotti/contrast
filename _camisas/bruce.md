@@ -25,8 +25,8 @@ nombre_del_modelo2: "Bruce Confort"
 tomar_medidas_con2: "Camisa Confort"
 
 # Botones
-boton_cuello:  "/assets/image/camisa/deta/Bruce__cuello.webp"
-boton_manga:  "/assets/image/camisa/deta/Bruce_boton.webp"
-boton_puno:  "/assets/image/camisa/deta/Bruce_puno.webp"
+boton_cuello:  "/assets/image/camisa/deta/bruce__cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/bruce_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/bruce_puno.webp"
 
 ---
