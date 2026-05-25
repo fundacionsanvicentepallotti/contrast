@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "18"
 title: "Shooter"
 categoria: "esencial"
@@ -23,5 +23,11 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Shooter Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/shooter_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/shooter_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/shooter_puno.webp"
+
 
 ---
