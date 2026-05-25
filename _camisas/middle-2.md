@@ -1,5 +1,10 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/middle-2_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/middle-2_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/middle-2_puno.webp"
 ide_camisa: "16"
 title: "Middle-2"
 categoria: "esencial"
@@ -23,5 +28,11 @@ tomar_medidas_con1: "Camisa Slim"
 silueta2: "Confort"
 nombre_del_modelo2: "Middle-2 Confort"
 tomar_medidas_con2: "Camisa Confort"
+
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/middle-2_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/middle-2_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/middle-2_puno.webp"
 
 ---
