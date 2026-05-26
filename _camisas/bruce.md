@@ -1,6 +1,6 @@
 ---
 layout: camisa-cuello-puno
-ide_camisa: "10"
+ide_camisa: "C4"
 title: "Bruce"
 categoria: "esencial"
 imagen: "/assets/image/camisa/bruce.webp"
