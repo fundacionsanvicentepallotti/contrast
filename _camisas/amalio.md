@@ -1,6 +1,6 @@
 ---
 layout: camisa-cuello-puno
-ide_camisa: "11"
+ide_camisa: "C2"
 title: "Amalio"
 categoria: "esencial"
 imagen: "/assets/image/camisa/amalio.webp"
