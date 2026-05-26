@@ -1,6 +1,6 @@
 ---
 layout: camisa-cuello-puno
-ide_camisa: "22"
+ide_camisa: "C1"
 title: "Alianz"
 categoria: "esencial"
 imagen: "/assets/image/camisa/alianz.webp"
