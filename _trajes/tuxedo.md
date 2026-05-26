@@ -1,5 +1,5 @@
 ---
-layout: traje-exclusivo
+layout: traje-detalle
 ide: "12"
 title: "Tuxedo"
 categoria: "Especial"
