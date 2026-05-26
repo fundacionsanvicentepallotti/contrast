@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: traje-exclusivo
 ide: "10"
 title: "Johon"
 categoria: "Especial"
@@ -27,4 +27,5 @@ bases_disponible2: "2010"
 silueta2: "CONFORT"
 nombre_del_modelo2: "FRANK"
 tomar_medidas_con2: "PRENDA TESTIGO T1022"
+
 ---
