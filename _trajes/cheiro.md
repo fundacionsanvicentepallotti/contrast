@@ -27,4 +27,5 @@ bases_disponible2: "BASE: 2010"
 silueta2: "SILUETA: CONFORT"
 nombre_del_modelo2: "BNS"
 tomar_medidas_con2: "PRENDA TESTIGO T1022"
+
 ---
