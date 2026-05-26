@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: sacos-detalle
 ide: "03"
 title: "King"
 categoria: "esencial"
