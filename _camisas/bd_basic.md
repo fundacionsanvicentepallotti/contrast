@@ -1,6 +1,6 @@
 ---
 layout: camisa-cuello-puno
-ide_camisa: "21"
+ide_camisa: "C3"
 title: "Bd basic"
 categoria: "esencial"
 imagen: "/assets/image/camisa/bd_basic.webp"
