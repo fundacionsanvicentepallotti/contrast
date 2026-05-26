@@ -1,5 +1,5 @@
 ---
-layout: traje-exclusivo
+layout: traje-detalle
 ide: "09"
 title: "Villa"
 categoria: "Especial"
