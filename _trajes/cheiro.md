@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: traje-detallex
 ide: "Exclusivo 06"
 title: "Cheiro"
 categoria: "Exclusivo"
