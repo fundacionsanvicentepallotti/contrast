@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: traje-exclusivo
 ide: "07"
 title: "Vairon"
 categoria: "Especial"
