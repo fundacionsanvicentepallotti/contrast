@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: traje-exclusivo
 ide: "12"
 title: "Tuxedo"
 categoria: "Especial"
@@ -22,4 +22,5 @@ bases_disponible1: "2009"
 silueta1: "CONFORT PLUS"
 nombre_del_modelo1: "TUXEDO"
 tomar_medidas_con1: "PRENDA TESTIGO JONAS"
+
 ---
