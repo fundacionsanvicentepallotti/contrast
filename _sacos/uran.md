@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: sacos-detalle
 ide: "02"
 title: "Uran"
 categoria: "esencial"
