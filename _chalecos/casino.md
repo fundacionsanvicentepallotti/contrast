@@ -1,5 +1,5 @@
 ---
-layout: traje-detalle
+layout: chalecos-detalles
 ide: "Chaleco-01"
 title: "Casino"
 categoria: "Esencial"
