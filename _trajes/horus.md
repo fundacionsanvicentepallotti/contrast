@@ -1,5 +1,5 @@
 ---
-layout: traje-exclusivo
+layout: traje-detalle
 ide: "05"
 title: "Horus"
 categoria: "Especial"
