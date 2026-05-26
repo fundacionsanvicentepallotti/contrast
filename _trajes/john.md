@@ -1,5 +1,5 @@
 ---
-layout: traje-exclusivo
+layout: traje-detalle
 ide: "10"
 title: "Johon"
 categoria: "Especial"
