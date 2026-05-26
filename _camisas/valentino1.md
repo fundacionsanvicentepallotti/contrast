@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "12"
 title: "Valentino1"
 categoria: "esencial"
@@ -24,5 +24,10 @@ silueta2: "Confort"
 nombre_del_modelo2: "Valentino1 Confort"
 tomar_medidas_con2: "Camisa Confort"
 
+
+# Botones
+boton_cuello:  "/assets/image/camisa/deta/valentino_1_cuello.webp"
+boton_manga:  "/assets/image/camisa/deta/valentino_1_boton.webp"
+boton_puno:  "/assets/image/camisa/deta/valentino_1_puno.webp"
 
 ---
