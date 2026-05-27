@@ -97,49 +97,11 @@ layout: default
 
     
 <!--AKA-->
-<hr>
-
-{% comment %} 1. Filtramos trajes por la misma categoría {% endcomment %}
-{% assign categoria_actual = page.categoria %}
-{% assign filtrados = site.trajes | where: "categoria", categoria_actual %}
-
-{% comment %} 2. Encontramos el índice actual {% endcomment %}
-{% assign actual_index = 0 %}
-{% for traje in filtrados %}
-    {% if traje.url == page.url %}
-        {% assign actual_index = forloop.index0 %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-
-{% comment %} 3. Calculamos los índices anterior y siguiente con efecto bucle {% endcomment %}
-{% assign total = filtrados.size %}
-{% assign prev_index = actual_index | minus: 1 %}
-{% if prev_index < 0 %}{% assign prev_index = total | minus: 1 %}{% endif %}
-
-{% assign next_index = actual_index | plus: 1 %}
-{% if next_index >= total %}{% assign next_index = 0 %}{% endif %}
-
-{% assign prev_traje = filtrados[prev_index] %}
-{% assign next_traje = filtrados[next_index] %}
-
-<div class="uk-grid-small uk-flex-center uk-flex-middle" uk-grid>
-    
-    <div class="uk-width-auto">
-        <a href="{{ prev_traje.url | relative_url }}" class="uk-button uk-button-text">
-            <span uk-icon="arrow-left"></span> {{ prev_traje.nombre_del_modelo1 }}
-        </a>
+    <hr>
+    <div class="uk-grid-small uk-flex-center uk-flex-middle" uk-grid>
+        <div class="uk-width-auto">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}" class="uk-button uk-button-text"><span uk-icon="arrow-left"></span> {{ page.previous.nombre_del_modelo1 }}</a>{% else %}<span class="uk-text-muted">Inicio</span>{% endif %}</div>
+        <div class="uk-width-auto"><a href="/contrast/trajes/" class="uk-icon-button" uk-icon="grid" uk-tooltip="Volver al catálogo"></a></div>
+        <div class="uk-width-auto">{% if page.next %}<a href="{{ page.next.url | relative_url }}" class="uk-button uk-button-text">{{ page.next.nombre_del_modelo1 }} <span uk-icon="arrow-right"></span></a>{% else %}<span class="uk-text-muted">Fin</span>{% endif %}</div>
+        <a href="#" uk-totop uk-scroll></a>
     </div>
-
-    <div class="uk-width-auto">
-        <a href="/trajes/" class="uk-icon-button" uk-icon="grid" uk-tooltip="Volver al catálogo"></a>
-    </div>
-
-    <div class="uk-width-auto">
-        <a href="{{ next_traje.url | relative_url }}" class="uk-button uk-button-text">
-            {{ next_traje.nombre_del_modelo1 }} <span uk-icon="arrow-right"></span>
-        </a>
-    </div>
-
-    <a href="#" uk-totop uk-scroll></a>
 </div>
