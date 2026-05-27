@@ -2,32 +2,7 @@
 layout: default
 ---
 <style>
-/* Estilo base (móvil) */
-.burbuja-responsive {
-    width: 80px; 
-    height: 80px;
-    margin: 0 auto; /* Centrado automático */
-}
 
-/* Tablet (Portrait/Vertical) - Ajuste específico */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .burbuja-responsive { 
-        width: 110px; 
-        height: 110px; 
-    }
-    /* Añadimos un poco de margen para que no se peguen en horizontal */
-    .burbuja-contenedor {
-        gap: 30px !important; 
-    }
-}
-
-/* Escritorio (960px en adelante) */
-@media (min-width: 960px) { 
-    .burbuja-responsive { 
-        width: 150px; 
-        height: 150px; 
-    }
-}
     
     /* 1. Estilos para las burbujas */
     .burbuja-responsive {
@@ -56,7 +31,7 @@ layout: default
 
         <div class="uk-width-1-1 uk-width-1-3@m">
     <!--burb-->
-            <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-row uk-flex-column@m uk-margin-large-top" style="gap: 20px;">
+            <!--<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-row uk-flex-column@m uk-margin-large-top" style="gap: 20px;">
                     <div class="uk-border-circle uk-overflow-hidden burbuja-lujo burbuja-responsive" 
                          style="border: 3px solid #B5B192; display: flex; align-items: center; justify-content: center;" 
                          uk-tooltip="title: Cuello; pos: Cuello">
@@ -74,7 +49,7 @@ layout: default
                          uk-tooltip="title: Puño; pos: Puño">
                         <img src="{{ page.boton_puno | relative_url }}" alt="Puño" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-            </div>
+            </div>-->
      <!--/burb-->
         </div>
     </div>
