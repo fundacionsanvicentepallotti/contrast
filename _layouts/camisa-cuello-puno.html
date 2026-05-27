@@ -2,6 +2,33 @@
 layout: default
 ---
 <style>
+/* Estilo base (móvil) */
+.burbuja-responsive {
+    width: 80px; 
+    height: 80px;
+    margin: 0 auto; /* Centrado automático */
+}
+
+/* Tablet (Portrait/Vertical) - Ajuste específico */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .burbuja-responsive { 
+        width: 110px; 
+        height: 110px; 
+    }
+    /* Añadimos un poco de margen para que no se peguen en horizontal */
+    .burbuja-contenedor {
+        gap: 30px !important; 
+    }
+}
+
+/* Escritorio (960px en adelante) */
+@media (min-width: 960px) { 
+    .burbuja-responsive { 
+        width: 150px; 
+        height: 150px; 
+    }
+}
+    
     /* 1. Estilos para las burbujas */
     .burbuja-responsive {
         width: 80px;
