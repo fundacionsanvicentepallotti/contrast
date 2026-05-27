@@ -70,21 +70,30 @@ layout: default
             </li>
 
             <!-- Acordeón: Especificaciones Técnicas -->
-            <li>
-                <a class="uk-accordion-title" href="#">Especificaciones Técnicas</a>
-                <div class="uk-accordion-content">
-                    <div class="uk-padding-small uk-border-rounded" style="background-color: #F8F8F8;">
-                        <div class="uk-grid-column-large uk-grid-row-small uk-child-width-1-2@s" uk-grid>
-                            <div><p><strong>Manga:</strong> {{ page.manga }}</p></div>
-                            <div><p><strong>Cuello:</strong> {{ page.cuello }}</p>
-                            <div><p><strong>Puño:</strong> {{ page.puno }}</p></div>
-                            <div><p><strong>Bolsillo:</strong> {{ page.bolsillo }}</p></div>
-                            <div><p><strong>Contraste:</strong> {{ page.tela_contrast }}</p></div>
-                            <div><p><strong>Otros:</strong> {{ page.otro_detalle }}</p></div>
-                        </div>
-                    </div>
-                </div>
-            </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Especificaciones Técnicas</a>
+                            <div class="uk-accordion-content">
+                                <div class="uk-card uk-card-body" style="background-color: #F8F8F8; padding: 30px;">
+                                    <div class="uk-grid-small" uk-grid>
+                                        
+                                        <!-- Columna Izquierda -->
+                                        <div class="uk-width-1-2@s">
+                                            <p class="uk-margin-small-bottom"><strong>Manga:</strong> {{ page.manga }}</p>
+                                            <p class="uk-margin-small-bottom"><strong>Cuello:</strong> {{ page.cuello }}</p>
+                                            <p class="uk-margin-small-bottom"><strong>Puño:</strong> {{ page.puno }}</p>
+                                        </div>
+                        
+                                        <!-- Columna Derecha -->
+                                        <div class="uk-width-1-2@s">
+                                            <p class="uk-margin-small-bottom"><strong>Bolsillo:</strong> {{ page.bolsillo }}</p>
+                                            <p class="uk-margin-small-bottom"><strong>Contraste:</strong> {{ page.tela_contrast }}</p>
+                                            <p class="uk-margin-small-bottom"><strong>Otros:</strong> {{ page.otro_detalle }}</p>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
         </ul>
     </div>
     <!-- FIN DEL ACORDEÓN -->
