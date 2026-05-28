@@ -107,20 +107,74 @@ layout: default
 
 
 
-<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
+      <div class="uk-section uk-section-xsmall">
+        <ul uk-accordion="multiple: true">
+            
+            <li>
+                <a class="uk-accordion-title" href="#">Modelos Disponibles</a>
+                <div class="uk-accordion-content">
+                    <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
+                                <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h3>
+                                <p class="uk-text-muted">{{ page.bases_disponible1 }}</p>
+                                <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
+                                <dd>{{ page.tomar_medidas_con1 }}</dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
+                                <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo2 }}</h3>
+                                <p class="uk-text-muted">{{ page.bases_disponible2 }}</p>
+                                <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
+                                <dd>{{ page.tomar_medidas_con2 }}</dd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
-<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-    <div class="uk-offcanvas-bar">
+            <li>
+                <a class="uk-accordion-title" href="#">Especificaciones Técnicas</a>
+                <div class="uk-accordion-content">
+                    <div class="uk-card uk-card-body" style="background-color: #F8F8F8; padding: 30px;">
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-2@s">
+                                <p class="uk-margin-small-bottom"><strong>Manga:</strong> {{ page.manga }}</p>
+                                <p class="uk-margin-small-bottom"><strong>Cuello:</strong> {{ page.cuello }}</p>
+                                <p class="uk-margin-small-bottom"><strong>Puño:</strong> {{ page.puno }}</p>
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <p class="uk-margin-small-bottom"><strong>Bolsillo:</strong> {{ page.bolsillo }}</p>
+                                <p class="uk-margin-small-bottom"><strong>Contraste:</strong> {{ page.tela_contrast }}</p>
+                                <p class="uk-margin-small-bottom"><strong>Otros:</strong> {{ page.otro_detalle }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <li>
+                <a class="uk-accordion-title" href="#">Notas Internas</a>
+                <div class="uk-accordion-content">
+                    <div class="uk-card uk-card-body" style="background-color: #f8f8f8; border-left: 5px solid #B59410; padding: 20px;">
+                        <p class="uk-text-small uk-text-muted uk-margin-remove-bottom">
+                            <span uk-icon="icon: lock; ratio: 0.8"></span> <strong>Acceso restringido:</strong>
+                        </p>
+                        <p class="uk-margin-small-top">
+                            Aquí puedes colocar los detalles técnicos, historial de cambios o notas de contexto que solo el asesor debe consultar.
+                        </p>
+                    </div>
+                </div>
+            </li>
 
-        <h3>Title</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+        </ul>
     </div>
-</div>
+    ```
 
+¿Necesitas ayuda con algún otro detalle de este bloque o estamos listos con la estructura?
     
 
 
