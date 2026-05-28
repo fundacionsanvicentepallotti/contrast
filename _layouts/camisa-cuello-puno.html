@@ -14,6 +14,23 @@ layout: default
 .uk-accordion-title:hover { color: #B59410 !important; }
 
 
+
+/* Corrección de salto de página */
+                /* 1. Forzar la barra de desplazamiento siempre presente */
+                html {
+                    overflow-y: scroll !important;
+                }
+                
+                /* 2. Bloquear el padding que UIkit añade por JavaScript */
+                body.uk-modal-page {
+                    padding-right: 0 !important;
+                }
+                
+                /* 3. Evitar el desplazamiento de elementos fijos si los tuvieras */
+                .uk-modal-page {
+                    overflow-y: scroll !important;
+                } 
+
 </style>
 
 
