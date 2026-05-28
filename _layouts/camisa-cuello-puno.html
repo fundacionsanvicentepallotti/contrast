@@ -2,8 +2,7 @@
 layout: default
 ---
 <style>
-    
-/* Estilo personalizado para el acordeón */
+/* Estilo del acordeón */
 .uk-accordion-title {
     font-size: 1.1rem !important;
     text-transform: uppercase;
@@ -12,36 +11,15 @@ layout: default
     border-bottom: 1px solid #e5e5e5;
     color: #333 !important;
 }
+.uk-accordion-title:hover { color: #B59410 !important; }
 
-/* Efecto al pasar el mouse */
-.uk-accordion-title:hover {
-    color: #B59410 !important; /* El color oro de tu marca */
-}
-
-/* Icono personalizado (opcional) */
-.uk-accordion-title::before {
-    content: "\f078"; /* Código de icono tipo flecha */
-    font-family: FontAwesome; /* Asegúrate de tener FontAwesome o usa un icono de UIkit */
-    float: right;
-}
-
-/* Esto evita que la página salte al abrir un modal */
-
-                    /* ... tus otros estilos ... */
-                    
-                    /* Forzar que el scroll siempre esté presente para evitar el salto */
-                    html {
-                        overflow-y: scroll;
-                    }
-                    
-                    /* Evitar que UIkit manipule el padding al abrir el modal */
-                    body.uk-modal-page {
-                        padding-right: 0 !important;
-                        overflow-y: scroll !important;
-                    }
-
-    
+/* Corrección de salto de página */
+html { overflow-y: scroll; }
+body.uk-modal-page { padding-right: 0 !important; overflow-y: scroll !important; }
 </style>
+
+
+
 
 <div class="uk-container uk-container-small uk-margin-medium-top uk-margin-large-bottom">
     
@@ -172,10 +150,12 @@ layout: default
 
 
 
-<div class="uk-text-center uk-margin-top">
-    <a href="#modal-info-asesor" class="uk-text-muted" uk-toggle title="Acceso Asesor">
-        <span uk-icon="icon: lock; ratio: 0.8"></span>
-    </a>
+<div id="modal-info-asesor" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Información del Asesor</h2>
+        <p>Aquí va el contenido restringido que solo el asesor debe ver.</p>
+    </div>
 </div>
 
 
