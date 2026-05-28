@@ -109,4 +109,25 @@ layout: default
         </ul>
     </div>
     <!-- FIN DEL ACORDEÓN -->
+
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Más detalles</button>
+    <div uk-dropdown="mode: click">
+        <p>Esta información aparece en una pequeña capa flotante sobre el contenido actual.</p>
+    </div>
+</div>
+
+    
+<ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: #switcher-content">
+    <li><a href="#">Detalles</a></li>
+    <li><a href="#">Contexto</a></li>
+</ul>
+
+<ul id="switcher-content" class="uk-switcher uk-margin">
+    <li>Contenido de los detalles principales.</li>
+    <li>Contenido del contexto histórico o teológico.</li>
+</ul>
+
+    
 </div>
