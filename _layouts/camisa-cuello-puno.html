@@ -115,8 +115,31 @@ layout: default
         </ul>
     </div>
     <!-- FIN DEL ACORDEÓN -->
+<a href="#offcanvas-asesor" class="uk-text-muted" uk-toggle>
+    <span uk-icon="icon: lock; ratio: 0.8"></span>
+</a>
 
 
+
+                    <div id="offcanvas-asesor" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar">
+                    
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    
+                            <h3>Información del Asesor</h3>
+                            <p>Aquí puedes poner toda la data técnica, contextos históricos de la prenda, o notas que solo tú debes ver.</p>
+                            
+                            <hr>
+                            
+                            <ul class="uk-list">
+                                <li><strong>ID:</strong> {{ page.id }}</li>
+                                <li><strong>Estado:</strong> Privado</li>
+                            </ul>
+                    
+                        </div>
+                    </div>
+
+    
 
 
     
