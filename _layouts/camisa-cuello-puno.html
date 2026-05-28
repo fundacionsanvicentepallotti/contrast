@@ -24,7 +24,11 @@ layout: default
     font-family: FontAwesome; /* Asegúrate de tener FontAwesome o usa un icono de UIkit */
     float: right;
 }
-   
+
+/* Esto evita que la página salte al abrir un modal */
+body.uk-modal-page {
+    overflow-y: scroll;
+}
 </style>
 
 <div class="uk-container uk-container-small uk-margin-medium-top uk-margin-large-bottom">
@@ -185,5 +189,14 @@ layout: default
 </div>
 
 
+
+
+
+
+<div class="uk-text-center uk-margin-top">
+    <a href="#modal-info-asesor" class="uk-text-muted" uk-toggle>
+        <span uk-icon="icon: lock; ratio: 0.8"></span>
+    </a>
+</div>
     
 </div>
