@@ -1,5 +1,5 @@
 ---
-layout: camisa-cuello-puno
+layout: camisa-detalle
 ide_camisa: "C1"
 title: "Alianz"
 categoria: "esencial"
