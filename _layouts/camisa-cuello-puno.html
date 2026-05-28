@@ -111,50 +111,7 @@ layout: default
     <!-- FIN DEL ACORDEÓN -->
 
 
-<div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Más detalles</button>
-    <div uk-dropdown="mode: click">
-        
 
-
-
-                            <!-- Añadimos uk-child-width-1-2@m para que se dividan en 2 columnas -->
-                            <div class="uk-grid-medium uk-child-width-1-1@m" uk-grid>
-                                
-                                <!-- Modelo 1 -->
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-                                        <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
-                                        <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h3>
-                                        <p class="uk-text-muted">{{ page.bases_disponible1 }}</p>
-                                        <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
-                                        <dd>{{ page.tomar_medidas_con1 }}</dd>
-                                    </div>
-                                </div>
-                    
-                                <!-- Modelo 2 -->
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-                                        <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
-                                        <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo2 }}</h3>
-                                        <p class="uk-text-muted">{{ page.bases_disponible2 }}</p>
-                                        <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
-                                        <dd>{{ page.tomar_medidas_con2 }}</dd>
-                                    </div>
-                                </div>
-                    
-                            </div>
-
-
-        
-    </div>
-</div>
-
-
-
-
-
-    
 
     
 <ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: #switcher-content">
@@ -194,6 +151,21 @@ layout: default
         
     </li>
 </ul>
+
+
+
+
+
+
+<a class="uk-button uk-button-default" href="#modal-container" uk-toggle>Open</a>
+
+<div id="modal-container" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
 
     
 </div>
