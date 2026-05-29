@@ -5,45 +5,62 @@ layout: default
 <!-- Botón de acceso exclusivo para asesores -->
 <div class="uk-text-center uk-margin-medium-top">
     <a href="#offcanvas-datos" uk-toggle class="uk-text-muted uk-text-small" style="text-decoration: underline; cursor: pointer;">
-        <span uk-icon="icon: info; ratio: 0.8"></span> Ver ficha técnica (Exclusivo Asesores)
+        <span uk-icon="icon: info; ratio: 0.8"></span> Ver ficha técnica completa (Exclusivo Asesores)
     </a>
 </div>
 
-<!-- Panel Offcanvas (Invisible hasta que se hace clic) -->
+<!-- Panel Offcanvas -->
 <div id="offcanvas-datos" uk-offcanvas="overlay: true; flip: true">
     <div class="uk-offcanvas-bar uk-width-large">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         
-        <h3 class="uk-text-uppercase uk-text-bold">Especificaciones</h3>
+        <h3 class="uk-text-uppercase uk-text-bold">Ficha Técnica Completa</h3>
         <hr>
-        
-        <div class="uk-grid-small" uk-grid>
-            <div class="uk-width-1-1">
-                <dl class="uk-description-list">
-                    <dt><span uk-icon="icon: tag; ratio: 0.8" class="uk-margin-small-right"></span>Manga</dt>
-                    <dd class="uk-margin-small-bottom">{{ page.manga }}</dd>
-                    
-                    <dt><span uk-icon="icon: grid; ratio: 0.8" class="uk-margin-small-right"></span>Cuello</dt>
-                    <dd class="uk-margin-small-bottom">{{ page.cuello }}</dd>
-                    
-                    <dt><span uk-icon="icon: push; ratio: 0.8" class="uk-margin-small-right"></span>Puño</dt>
-                    <dd class="uk-margin-small-bottom">{{ page.puno }}</dd>
-                    
-                    <dt><span uk-icon="icon: thumbnails; ratio: 0.8" class="uk-margin-small-right"></span>Bolsillo</dt>
-                    <dd class="uk-margin-small-bottom">{{ page.bolsillo }}</dd>
-                    
-                    <dt><span uk-icon="icon: paint-bucket; ratio: 0.8" class="uk-margin-small-right"></span>Contraste</dt>
-                    <dd class="uk-margin-small-bottom">{{ page.tela_contrast }}</dd>
-                    
-                    <dt><span uk-icon="icon: settings; ratio: 0.8" class="uk-margin-small-right"></span>Otros</dt>
-                    <dd class="uk-margin-small-bottom">{{ page.otro_detalle }}</dd>
-                </dl>
+
+        <!-- Bloque: Modelos Disponibles -->
+        <h4 class="uk-margin-remove-bottom">Modelos Disponibles</h4>
+        <div class="uk-margin-small-bottom">
+            <div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-small-bottom">
+                <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
+                <h5 class="uk-margin-small-top uk-margin-remove-bottom">{{ page.nombre_del_modelo1 }}</h5>
+                <p class="uk-text-muted uk-margin-remove-top">{{ page.bases_disponible1 }}</p>
+                <div class="uk-text-meta">Medidas: {{ page.tomar_medidas_con1 }}</div>
+            </div>
+            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
+                <h5 class="uk-margin-small-top uk-margin-remove-bottom">{{ page.nombre_del_modelo2 }}</h5>
+                <p class="uk-text-muted uk-margin-remove-top">{{ page.bases_disponible2 }}</p>
+                <div class="uk-text-meta">Medidas: {{ page.tomar_medidas_con2 }}</div>
             </div>
         </div>
+
+        <hr>
+
+        <!-- Bloque: Especificaciones Técnicas -->
+        <h4 class="uk-margin-remove-bottom">Especificaciones Técnicas</h4>
+        <dl class="uk-description-list uk-margin-small-top">
+            <dt><span uk-icon="icon: tag; ratio: 0.7"></span> Manga</dt>
+            <dd class="uk-margin-small-bottom">{{ page.manga }}</dd>
+            
+            <dt><span uk-icon="icon: grid; ratio: 0.7"></span> Cuello</dt>
+            <dd class="uk-margin-small-bottom">{{ page.cuello }}</dd>
+            
+            <dt><span uk-icon="icon: push; ratio: 0.7"></span> Puño</dt>
+            <dd class="uk-margin-small-bottom">{{ page.puno }}</dd>
+            
+            <dt><span uk-icon="icon: thumbnails; ratio: 0.7"></span> Bolsillo</dt>
+            <dd class="uk-margin-small-bottom">{{ page.bolsillo }}</dd>
+            
+            <dt><span uk-icon="icon: paint-bucket; ratio: 0.7"></span> Contraste</dt>
+            <dd class="uk-margin-small-bottom">{{ page.tela_contrast }}</dd>
+            
+            <dt><span uk-icon="icon: settings; ratio: 0.7"></span> Otros</dt>
+            <dd class="uk-margin-small-bottom">{{ page.otro_detalle }}</dd>
+        </dl>
     </div>
 </div>
 
-<!-- Resto de tu página (Imagen y título) -->
+<!-- Contenido principal -->
 <div class="uk-container uk-margin-medium-top uk-margin-large-bottom">
     <div class="uk-text-center">
         <h1 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h1>
