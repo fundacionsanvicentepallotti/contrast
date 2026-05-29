@@ -13,110 +13,87 @@ layout: default
 }
 .uk-accordion-title:hover { color: #B59410 !important; }
 
-
-    
-    
+/* Ajuste adicional para que el contenido dentro del acordeón 
+   tenga espacio y no se sienta apretado */
+.uk-accordion-content {
+    padding-top: 20px;
+}
 </style>
 
+<div class="uk-container uk-margin-medium-top uk-margin-large-bottom">
 
-
-
-<div class="uk-container uk-container-small uk-margin-medium-top uk-margin-large-bottom">
-
-                                    <div class="uk-text-center">
-                                        <h1 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h1>
-                                        <!--<span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>-->
-                                    </div>
+    <div class="uk-text-center">
+        <h1 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h1>
+    </div>
     
-    <!-- Imagen Principal (se mantiene igual) -->
     <div class="uk-grid-small" uk-grid>
-
-        <div class="uk-width-1-1 uk-width-1-1@m" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
-            
+        <div class="uk-width-1-1 uk-width-2-3@m uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
             <div class="uk-overflow-hidden uk-border-rounded">
                 <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" style="display: block; width: 100%; height: 100%;">
             </div>
         </div>
     </div>
 
-    <!-- INICIO DEL ACORDEÓN -->
     <div class="uk-section uk-section-xsmall">
         <ul uk-accordion="multiple: true">
             
-            <!-- Acordeón: Modelos -->
-                    <li>
-                        <a class="uk-accordion-title" href="#">Modelos Disponibles</a>
-                        <div class="uk-accordion-content">
-                            <!-- Añadimos uk-child-width-1-2@m para que se dividan en 2 columnas -->
-                            <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
-                                
-                                <!-- Modelo 1 -->
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-                                        <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
-                                        <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h3>
-                                        <p class="uk-text-muted">{{ page.bases_disponible1 }}</p>
-                                        <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
-                                        <dd>{{ page.tomar_medidas_con1 }}</dd>
-                                    </div>
-                                </div>
-                    
-                                <!-- Modelo 2 -->
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-                                        <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
-                                        <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo2 }}</h3>
-                                        <p class="uk-text-muted">{{ page.bases_disponible2 }}</p>
-                                        <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
-                                        <dd>{{ page.tomar_medidas_con2 }}</dd>
-                                    </div>
-                                </div>
-                    
+            <li>
+                <a class="uk-accordion-title" href="#">Modelos Disponibles</a>
+                <div class="uk-accordion-content">
+                    <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+                        
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
+                                <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h3>
+                                <p class="uk-text-muted">{{ page.bases_disponible1 }}</p>
+                                <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
+                                <dd>{{ page.tomar_medidas_con1 }}</dd>
                             </div>
                         </div>
-                    </li>
-
-            <!-- Acordeón: Especificaciones Técnicas -->
-                        <li>
-                            <a class="uk-accordion-title" href="#">Especificaciones Técnicas</a>
-                            <div class="uk-accordion-content">
-                                <div class="uk-card uk-card-body" style="background-color: #F8F8F8; padding: 30px;">
-                                    <div class="uk-grid-small" uk-grid>
-                                        
-                                        <div class="uk-width-1-2@s">
-                                            <dl class="uk-description-list">
-                                                <dt><span uk-icon="icon: tag; ratio: 0.8" class="uk-margin-small-right"></span>Manga</dt>
-                                                <dd class="uk-margin-small-bottom">{{ page.manga }}</dd>
-                                        
-                                                <dt><span uk-icon="icon: grid; ratio: 0.8" class="uk-margin-small-right"></span>Cuello</dt>
-                                                <dd class="uk-margin-small-bottom">{{ page.cuello }}</dd>
-                                        
-                                                <dt><span uk-icon="icon: push; ratio: 0.8" class="uk-margin-small-right"></span>Puño</dt>
-                                                <dd class="uk-margin-small-bottom">{{ page.puno }}</dd>
-                                            </dl>
-                                        </div>
-                                        
-                                        <div class="uk-width-1-2@s">
-                                            <dl class="uk-description-list">
-                                                <dt><span uk-icon="icon: thumbnails; ratio: 0.8" class="uk-margin-small-right"></span>Bolsillo</dt>
-                                                <dd class="uk-margin-small-bottom">{{ page.bolsillo }}</dd>
-                                        
-                                                <dt><span uk-icon="icon: paint-bucket; ratio: 0.8" class="uk-margin-small-right"></span>Contraste</dt>
-                                                <dd class="uk-margin-small-bottom">{{ page.tela_contrast }}</dd>
-                                        
-                                                <dt><span uk-icon="icon: settings; ratio: 0.8" class="uk-margin-small-right"></span>Otros</dt>
-                                                <dd class="uk-margin-small-bottom">{{ page.otro_detalle }}</dd>
-                                            </dl>
-                                        </div>
-                        
-                                    </div>
-                                </div>
+                    
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                <span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>
+                                <h3 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo2 }}</h3>
+                                <p class="uk-text-muted">{{ page.bases_disponible2 }}</p>
+                                <dt class="uk-text-meta uk-text-uppercase">Tomar medidas</dt>
+                                <dd>{{ page.tomar_medidas_con2 }}</dd>
                             </div>
-                        </li>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a class="uk-accordion-title" href="#">Especificaciones Técnicas</a>
+                <div class="uk-accordion-content">
+                    <div class="uk-card uk-card-body" style="background-color: #F8F8F8; padding: 40px;">
+                        <div class="uk-grid-match uk-grid-large" uk-grid>
+                            <div class="uk-width-1-2@m">
+                                <dl class="uk-description-list">
+                                    <dt><span uk-icon="icon: tag; ratio: 0.8" class="uk-margin-small-right"></span>Manga</dt>
+                                    <dd class="uk-margin-small-bottom">{{ page.manga }}</dd>
+                                    <dt><span uk-icon="icon: grid; ratio: 0.8" class="uk-margin-small-right"></span>Cuello</dt>
+                                    <dd class="uk-margin-small-bottom">{{ page.cuello }}</dd>
+                                    <dt><span uk-icon="icon: push; ratio: 0.8" class="uk-margin-small-right"></span>Puño</dt>
+                                    <dd class="uk-margin-small-bottom">{{ page.puno }}</dd>
+                                </dl>
+                            </div>
+                            <div class="uk-width-1-2@m">
+                                <dl class="uk-description-list">
+                                    <dt><span uk-icon="icon: thumbnails; ratio: 0.8" class="uk-margin-small-right"></span>Bolsillo</dt>
+                                    <dd class="uk-margin-small-bottom">{{ page.bolsillo }}</dd>
+                                    <dt><span uk-icon="icon: paint-bucket; ratio: 0.8" class="uk-margin-small-right"></span>Contraste</dt>
+                                    <dd class="uk-margin-small-bottom">{{ page.tela_contrast }}</dd>
+                                    <dt><span uk-icon="icon: settings; ratio: 0.8" class="uk-margin-small-right"></span>Otros</dt>
+                                    <dd class="uk-margin-small-bottom">{{ page.otro_detalle }}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
-    <!-- FIN DEL ACORDEÓN -->
-
-
-
 </div>
