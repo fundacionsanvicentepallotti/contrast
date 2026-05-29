@@ -82,18 +82,30 @@ layout: default
                                 <div class="uk-card uk-card-body" style="background-color: #F8F8F8; padding: 30px;">
                                     <div class="uk-grid-small" uk-grid>
                                         
-                                        <!-- Columna Izquierda -->
                                         <div class="uk-width-1-2@s">
-                                            <p class="uk-margin-small-bottom"><strong>Manga:</strong> {{ page.manga }}</p>
-                                            <p class="uk-margin-small-bottom"><strong>Cuello:</strong> {{ page.cuello }}</p>
-                                            <p class="uk-margin-small-bottom"><strong>Puño:</strong> {{ page.puno }}</p>
+                                            <dl class="uk-description-list">
+                                                <dt><span uk-icon="icon: tag; ratio: 0.8" class="uk-margin-small-right"></span>Manga</dt>
+                                                <dd class="uk-margin-small-bottom">{{ page.manga }}</dd>
+                                        
+                                                <dt><span uk-icon="icon: grid; ratio: 0.8" class="uk-margin-small-right"></span>Cuello</dt>
+                                                <dd class="uk-margin-small-bottom">{{ page.cuello }}</dd>
+                                        
+                                                <dt><span uk-icon="icon: push; ratio: 0.8" class="uk-margin-small-right"></span>Puño</dt>
+                                                <dd class="uk-margin-small-bottom">{{ page.puno }}</dd>
+                                            </dl>
                                         </div>
-                        
-                                        <!-- Columna Derecha -->
+                                        
                                         <div class="uk-width-1-2@s">
-                                            <p class="uk-margin-small-bottom"><strong>Bolsillo:</strong> {{ page.bolsillo }}</p>
-                                            <p class="uk-margin-small-bottom"><strong>Contraste:</strong> {{ page.tela_contrast }}</p>
-                                            <p class="uk-margin-small-bottom"><strong>Otros:</strong> {{ page.otro_detalle }}</p>
+                                            <dl class="uk-description-list">
+                                                <dt><span uk-icon="icon: thumbnails; ratio: 0.8" class="uk-margin-small-right"></span>Bolsillo</dt>
+                                                <dd class="uk-margin-small-bottom">{{ page.bolsillo }}</dd>
+                                        
+                                                <dt><span uk-icon="icon: paint-bucket; ratio: 0.8" class="uk-margin-small-right"></span>Contraste</dt>
+                                                <dd class="uk-margin-small-bottom">{{ page.tela_contrast }}</dd>
+                                        
+                                                <dt><span uk-icon="icon: settings; ratio: 0.8" class="uk-margin-small-right"></span>Otros</dt>
+                                                <dd class="uk-margin-small-bottom">{{ page.otro_detalle }}</dd>
+                                            </dl>
                                         </div>
                         
                                     </div>
