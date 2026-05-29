@@ -22,15 +22,16 @@ layout: default
 
 
 <div class="uk-container uk-container-small uk-margin-medium-top uk-margin-large-bottom">
-    
-    <!-- Imagen Principal (se mantiene igual) -->
-    <div class="uk-grid-small" uk-grid>
-        <div class="uk-width-1-1 uk-width-1-1@m" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
-            
+
                                     <div class="uk-text-center">
                                         <h1 class="uk-text-bold uk-margin-small-top">{{ page.nombre_del_modelo1 }}</h1>
                                         <!--<span class="uk-label uk-border-pill" style="background: #B59410;">{{ page.categoria }}</span>-->
                                     </div>
+    
+    <!-- Imagen Principal (se mantiene igual) -->
+    <div class="uk-grid-small" uk-grid>
+
+        <div class="uk-width-1-1 uk-width-1-1@m" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500; repeat: false">
             
             <div class="uk-overflow-hidden uk-border-rounded">
                 <img src="{{ page.imagen | relative_url }}" alt="{{ page.title }}" style="display: block; width: 100%; height: 100%;">
