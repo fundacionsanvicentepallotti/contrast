@@ -11,7 +11,7 @@ cuello: "ITALIANO (VALENTINO)"
 puno: "Sencillo, Cuadrado"
 bolsillo: "No aplica"
 tela_contrast: "No aplica"
-otro_detalle: "cortes del frente con pespunte en puños, cuellos y hombros"
+otro_detalle: "Cortes del frente con pespunte en puños, cuellos y hombros"
 
 # --- OPCIONES DE BASE (CORTES) ---
 # Base 1 (Estilo más ajustado)
