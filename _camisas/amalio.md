@@ -3,7 +3,7 @@ layout: camisa-cuello-puno
 ide_camisa: "C2"
 title: "Amalio"
 categoria: "esencial"
-imagen: "/assets/image/camisa/amalio_prueba_1000x1543.webp"
+imagen: "/assets/image/camisa/Amalio-prueba-1000x1543.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
