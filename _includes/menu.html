@@ -21,6 +21,13 @@
     letter-spacing: 1px;
 }
 
+
+.contenedor-padre {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+}
+    
+
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
@@ -53,7 +60,7 @@
     </nav>
 </div>
 <!--Amalio texto-->
-    <div class="uk-text-left uk-margin-remove">
+    <div class="uk-text-left uk-margin-remove contenedor-padre">
         <h2 class="uk-text-bold uk-margin-small-top" style="color: white;">{{ page.nombre_del_modelo1 }}</h2>
     </div>
 <!--Amalio texto-->
