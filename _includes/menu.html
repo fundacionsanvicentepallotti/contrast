@@ -35,7 +35,7 @@
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 
-<div style="display: flex; align-items: center; justify-content: flex-start; background: #2d2d34; padding: 10px 10px; width: 100%;">
+<div style="display: flex; align-items: center; justify-content: flex-start; background: #2d2d34; padding: 5px 5px; width: 100%;">
     
     <div style="margin-right: 30px;"> 
         <a href="{{ '/' | relative_url }}">
@@ -60,11 +60,10 @@
         </a>
     </nav>
 </div>
-<!--Amalio texto-->
-    <div class="uk-text-right uk-margin-remove tu-bloque">
-        <h2 class="uk-text-bold uk-margin-small-top" style="color: white;">{{ page.nombre_del_modelo1 }}</h2>
+<!-- Amalio Slim Alineado a la derecha (Dentro del contenedor) -->
+    <div style="margin-left: auto;">
+        <h2 class="uk-text-bold uk-margin-remove" style="color: white; font-size: 1.5rem; margin-bottom: 0;">{{ page.nombre_del_modelo1 }}</h2>
     </div>
-<!--Amalio texto-->
 
 <div id="menu-movil" uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar" style="background: #111; display: flex; flex-column: column;">
