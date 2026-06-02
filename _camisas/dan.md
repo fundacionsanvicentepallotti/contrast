@@ -3,7 +3,7 @@ layout: camisa-cuello-puno
 ide_camisa: "6"
 title: "Dan"
 categoria: "esencial"
-imagen: "/assets/image/camisa/dan.webp"
+imagen: "/assets/image/camisa/dan--2.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
 manga: "larga"
