@@ -70,7 +70,7 @@ permalink: /trajes/
                 
                 <div class="uk-card-media-top uk-inline uk-overflow-hidden">
                     
-                    {% if traje.categoria == "Especial" %}
+                    {% if traje.categoria == "Exclusivo" %}
                     <div style="position: absolute; top: 12px; right: 12px; z-index: 10;" 
                          uk-scrollspy="cls: uk-animation-scale-up; delay: 300; repeat: false">
                         <span uk-icon="icon: star; ratio: 0.9" 
