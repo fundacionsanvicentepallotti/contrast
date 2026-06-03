@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "07"
 title: "Vairon"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-vairon.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
