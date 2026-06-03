@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "05"
 title: "Horus"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-horus.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
