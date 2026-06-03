@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "10"
 title: "Johon"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-john.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
