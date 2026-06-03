@@ -1,7 +1,7 @@
 ---
 layout: traje-detalle
 ide: "07"
-title: "Vairon"
+title: "Bairon"
 categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-vairon.webp"
 
