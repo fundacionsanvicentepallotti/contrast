@@ -1,5 +1,5 @@
 ---
-layout: camisa-detalle
+layout: camisa-cuello-puno
 ide_camisa: "25"
 title: "Event-2"
 categoria: "especial"
