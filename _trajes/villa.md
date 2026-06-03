@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "09"
 title: "Villa"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-villa.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
