@@ -2,7 +2,7 @@
 layout: traje-detalle
 ide: "12"
 title: "Tuxedo"
-categoria: "Especial"
+categoria: "Exclusivo"
 imagen: "/assets/image/trajes/tesp-tuxedo.webp"
 
 # --- DETALLES DE CONFECCIÓN ---
