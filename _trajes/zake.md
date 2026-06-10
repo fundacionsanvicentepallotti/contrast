@@ -27,4 +27,5 @@ bases_disponible2: "2010"
 silueta2: "CONFORT"
 nombre_del_modelo2: "ZABIELA"
 tomar_medidas_con2: "PRENDA TESTIGO T1022"
+
 ---
